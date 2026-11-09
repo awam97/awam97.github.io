@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awam Zeyad · WordPress and PHP web developer · Milan, remote</title>
+<meta name="description" content="Web developer in Milan, working remotely. WordPress and WooCommerce sites, custom PHP and CodeIgniter systems, Make automations, maintenance, speed and technical SEO.">
+<link rel="canonical" href="https://awam97.github.io/en/">
+<link rel="alternate" hreflang="it" href="https://awam97.github.io/">
+<link rel="alternate" hreflang="en" href="https://awam97.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://awam97.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Awam Zeyad">
+<meta property="og:title" content="Awam Zeyad · WordPress and PHP web developer">
+<meta property="og:description" content="WordPress sites, custom PHP systems and automations. Milan, working remotely.">
+<meta property="og:url" content="https://awam97.github.io/en/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://awam97.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Awam Zeyad, web developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#77206e">
+<link rel="icon" href="../assets/brand/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="../assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin="">
+<script>if(location.hash==="#en"&&!location.pathname.includes("/en/"))location.replace("en/")</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Awam Zeyad", "jobTitle": "Web Developer", "url": "https://awam97.github.io/", "image": "https://awam97.github.io/assets/awam.jpg", "email": "mailto:awam.develops@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Milano", "addressCountry": "IT"}, "sameAs": ["https://www.linkedin.com/in/awam-develops/", "https://github.com/awam97", "https://awam.ly"], "knowsAbout": ["WordPress", "WooCommerce", "Elementor", "PHP", "CodeIgniter", "MySQL", "JavaScript", "Make (automation)", "Technical SEO", "Website maintenance"], "knowsLanguage": ["ar", "it", "en"], "alumniOf": {"@type": "CollegeOrUniversity", "name": "Università di Modena e Reggio Emilia"}}</script>
+<style>
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url("../assets/fonts/poppins-400.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url("../assets/fonts/poppins-ext-400.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url("../assets/fonts/poppins-500.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url("../assets/fonts/poppins-ext-500.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url("../assets/fonts/poppins-600.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url("../assets/fonts/poppins-ext-600.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:swap;src:url("../assets/fonts/poppins-700.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:swap;src:url("../assets/fonts/poppins-ext-700.woff2") format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--purple:#77206e;--purple-dark:#5e1857;--ink:#17131c;--muted:#6b6577;--line:#e9e5ee;--bg:#ffffff;--bg-2:#f8f7fa}
+@media (prefers-color-scheme:dark){:root{--purple:#d3a9cc;--purple-dark:#e7d0e3;--ink:#efeaf1;--muted:#a69daf;--line:#2c2431;--bg:#141017;--bg-2:#1a151d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Poppins",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:var(--purple);text-underline-offset:3px}
+a:hover{color:var(--purple-dark)}
+img{max-width:100%;display:block}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{display:block;line-height:0}
+.logo img{height:36px;width:auto}
+@media (prefers-color-scheme:dark){.logo img{height:40px}}
+.bar nav{display:flex;align-items:center;gap:20px;font-size:14.5px}
+.bar nav a{color:var(--muted);text-decoration:none}
+.bar nav a:hover{color:var(--ink)}
+.lang{font-size:14px;color:var(--muted)}
+.bar nav .lang a{color:var(--muted);text-decoration:none;padding:4px}
+.bar nav .lang a[aria-current]{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--purple)}
+@media (max-width:640px){.bar nav .lang a{display:inline}}
+@media (max-width:640px){.bar nav a{display:none}}
+
+.intro{display:flex;gap:32px;align-items:flex-start;padding:56px 0 48px}
+.intro picture{flex:none;display:block}
+.intro img{width:128px;height:128px;border-radius:50%;object-fit:cover;flex:none;border:4px solid var(--bg);box-shadow:0 0 0 3px var(--purple)}
+h1{font-size:30px;line-height:1.25;margin:0 0 14px;font-weight:700}
+.intro p{margin:0 0 12px}
+.intro .links{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 20px;font-weight:500}
+@media (max-width:600px){.intro{flex-direction:column;gap:20px;padding:36px 0 32px}.intro img{width:96px;height:96px}h1{font-size:25px}}
+
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:21px;margin:0 0 6px;font-weight:600}
+.note{color:var(--muted);margin:0 0 28px}
+
+.project{display:grid;grid-template-columns:300px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
+.project:last-child{border-bottom:0}
+.project .shot{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden;aspect-ratio:16/10;background:var(--bg-2)}
+.project .shot img{width:100%;height:100%;object-fit:cover;object-position:top}
+.project h3{margin:0 0 4px;font-size:17.5px;font-weight:600}
+.project h3 a{color:var(--ink);text-decoration:none}
+.project h3 a:hover{color:var(--purple)}
+.project .meta{font-size:14px;color:var(--muted);margin:0 0 8px}
+.project p{margin:0 0 8px}
+.project .stack{font-size:14px;color:var(--muted);margin:0}
+.wp{color:var(--purple);font-weight:600}
+@media (max-width:680px){.project{grid-template-columns:1fr;gap:14px}}
+
+ul.plain{margin:0;padding-left:20px}
+ul.plain li{margin-bottom:6px}
+.jobs{list-style:none;margin:0;padding:0}
+.jobs li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:10px 0}
+.jobs .y{color:var(--muted);font-size:14.5px;padding-top:1px}
+.jobs b{font-weight:600}
+.jobs span.d{display:block;color:var(--muted);font-size:15px}
+@media (max-width:520px){.jobs li{grid-template-columns:1fr;gap:0}}
+.skills p{margin:0 0 6px}
+.skills b{font-weight:600}
+.probs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.prob{border:1px solid var(--line);border-radius:10px;padding:18px 20px;background:var(--bg)}
+.prob .q{font-weight:600;margin:0 0 6px;color:var(--ink)}
+.prob p{margin:0;font-size:15px;color:var(--muted)}
+@media (max-width:640px){.probs{grid-template-columns:1fr}}
+.auto{border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:18px;background:var(--bg-2)}
+.auto h3{margin:0 0 6px;font-size:17px;font-weight:600}
+.auto>p{margin:0 0 20px;font-size:15px;color:var(--muted)}
+.flow{display:flex;align-items:flex-start;margin:0 0 18px}
+.node{flex:1;position:relative;text-align:center;padding:0 4px}
+.node:not(:last-child)::after{content:"";position:absolute;top:28px;left:calc(50% + 32px);right:calc(-50% + 32px);border-top:2px dotted #c8b6c5}
+.node i{display:grid;place-items:center;width:56px;height:56px;margin:0 auto 8px;border-radius:50%;color:#fff}
+.node svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.node b{display:block;font-size:13.5px;font-weight:600;line-height:1.3}
+.node small{display:block;font-size:12.5px;color:var(--muted);line-height:1.35}
+.c-site{background:#5e1857}.c-make{background:#77206e}.c-crm{background:#a03896}.c-mail{background:#c5372c}.c-bell{background:#d58a1a}.c-sheet{background:#1e8e4e}.c-filter{background:#6b6577}.c-clock{background:#3a6ea5}.c-ads{background:#2d7ff9}
+@media (max-width:640px){
+ .flow{flex-direction:column;gap:14px}
+ .node{display:grid;grid-template-columns:44px 1fr;column-gap:12px;text-align:left;padding:0}
+ .node i{width:44px;height:44px;margin:0;grid-row:span 2}
+ .node svg{width:21px;height:21px}
+ .node:not(:last-child)::after{top:48px;left:21px;right:auto;bottom:-12px;border-top:0;border-left:2px dotted #c8b6c5}
+}
+.mock{max-width:470px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:13.5px}
+.mock .mh{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.mock .mh .t{margin-left:auto;color:var(--muted);font-size:12.5px}
+.mock .dot{width:9px;height:9px;border-radius:50%;background:#77206e}.mock .dot.g{background:#1e8e4e}
+.mock .ms{margin:0 0 8px;font-weight:600}
+.mock table{border-collapse:collapse;width:100%}
+.mock td{padding:5px 8px 5px 0;border-top:1px solid var(--line);vertical-align:top}
+.mock th,.mock td{text-align:left;font-weight:400}
+.mock th{padding:5px 8px 5px 0;border-top:1px solid var(--line);vertical-align:top}
+.mail th{color:var(--muted);width:90px}
+.sheet{max-width:560px;overflow-x:auto}
+.sheet td,.sheet th{padding:6px 10px;border:1px solid var(--line);white-space:nowrap}
+.sheet .th th{background:var(--bg-2);font-weight:600;color:var(--muted);font-size:12.5px}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:1px 8px;border-radius:999px;background:#e3f4ea;color:#17683b}
+.pill.y{background:#fdf1dc;color:#8a5a0b}.pill.r{background:#f3e8f1;color:#77206e}
+.sk{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.skr{padding:14px 0;border-top:1px solid var(--line)}
+.skr h3{margin:0 0 2px;font-size:16px;font-weight:600}
+.skr .tools{margin:0 0 4px;font-size:14px;color:var(--purple);font-weight:500}
+.skr p{margin:0;font-size:15px;color:var(--muted)}
+@media (max-width:640px){.sk{grid-template-columns:1fr}}
+.contact p{margin:0 0 10px}
+footer{background:#77206e;color:#f3e8f1;padding:32px 0;font-size:14px;margin-top:20px}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer img{height:40px;width:auto}
+footer a{color:#fff}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#"><picture><source srcset="../assets/brand/logo-white-340.webp" media="(prefers-color-scheme: dark)"><img src="../assets/brand/logo-color-340.webp" width="340" height="74" alt="Awam Develops"></picture></a>
+    <nav>
+      <a href="#servizi">Services</a>
+      <a href="#automazioni">Automation</a>
+      <a href="#lavori">Work</a>
+      <a href="#contatti">Contact</a>
+      <span class="lang"><a href="https://awam97.github.io/" hreflang="it" lang="it" data-l="it">IT</a> / <a href="https://awam97.github.io/en/" hreflang="en" lang="en" data-l="en" aria-current="page">EN</a></span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <picture><source srcset="../assets/awam-256.webp" type="image/webp"><img src="../assets/awam-256.jpg" width="256" height="256" alt="Photo of Awam Zeyad"></picture>
+    <div>
+      <h1>Hi, I'm Awam. I build WordPress sites and PHP applications.</h1>
+      <p>I've been building websites since 2017, first in Libya and now from Italy. I live in Milan and work remotely.</p>
+      <p>Most of my work is WordPress (themes, Elementor, WooCommerce), and PHP with CodeIgniter when something needs to be custom: back-office systems, portals with logins, APIs for phone apps. I also look after sites once they're live.</p>
+      <p>I'm looking to work with web agencies, per project or on an ongoing basis, or for a remote developer job.</p>
+      <div class="links">
+        <a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a>
+        <a href="https://www.linkedin.com/in/awam-develops/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/awam97" target="_blank" rel="noopener">GitHub</a>
+        <a href="../cv/Awam-Zeyad-CV.pdf" download="">CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="servizi">
+    <h2>What I can fix for you</h2>
+    <p class="note">The problems people bring me most often, and how I solve them.</p>
+    <div class="probs">
+      <div class="prob"><p class="q">"The site is slow and loads badly on phones."</p><p>I compress images, sort out caching and heavy plugins, and change hosting if needed. I measure with PageSpeed before and after, so you can see the difference.</p></div>
+      <div class="prob"><p class="q">"Nobody updates the site, and I'm afraid it will break."</p><p>Monthly maintenance: backups, updates tested on a copy first, security checks and bug fixes.</p></div>
+      <div class="prob"><p class="q">"I have a Figma design and need someone to turn it into a site."</p><p>I build it in WordPress, with Elementor or a custom theme, true to the design and easy for the client to edit.</p></div>
+      <div class="prob"><p class="q">"I want to sell online."</p><p>A WooCommerce shop with products, payments, shipping and order emails, plus small plugins when something specific is needed.</p></div>
+      <div class="prob"><p class="q">"Enquiries from the site get lost, or I copy them by hand."</p><p>I connect the site's form to the CRM, Google Sheets and email with Make: every enquiry is saved, you get an alert and the client gets a reply straight away.</p></div>
+      <div class="prob"><p class="q">"Spreadsheets and email aren't enough to run the work any more."</p><p>I build a custom system in PHP and CodeIgniter: logins with users and roles, records, PDF reports, and a connected app if needed.</p></div>
+      <div class="prob"><p class="q">"The site can't be found on Google."</p><p>I fix the technical SEO: titles, structure, sitemap, speed, Search Console and Analytics, so you know where visits come from.</p></div>
+      <div class="prob"><p class="q">"Our agency has more work than developers."</p><p>I join your workflow remotely, per project or for a few days a month, using your tools and your rules.</p></div>
+    </div>
+  </section>
+
+  <section id="automazioni">
+    <h2>Automation</h2>
+    <p class="note">A lot of repetitive work can be taken off your plate. I mostly use Make, connected to Gmail, Google Sheets, CRMs and website forms. Here are three flows I've built.</p>
+
+    <div class="auto">
+      <h3>1. Website enquiries land in the CRM</h3>
+      <p>Someone fills in the contact form. The enquiry is saved in the CRM, the client gets an automatic reply and you get an alert with all the details. No enquiry sits forgotten in an inbox.</p>
+      <div class="flow">
+        <div class="node"><i class="c-site"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 8h8M8 12h8M8 16h5"></path></svg></i><b>Website form</b><small>new enquiry</small></div>
+        <div class="node"><i class="c-make"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="18" cy="18" r="2.5"></circle><path d="M8.3 11 15.7 7M8.3 13l7.4 4"></path></svg></i><b>Make</b><small>webhook</small></div>
+        <div class="node"><i class="c-crm"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.6c2 .7 3.2 2.5 3.6 5.4"></path></svg></i><b>CRM</b><small>creates the contact</small></div>
+        <div class="node"><i class="c-mail"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></i><b>Gmail</b><small>reply to the client</small></div>
+        <div class="node"><i class="c-bell"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4z"></path><path d="M10 20a2 2 0 0 0 4 0"></path></svg></i><b>Alert</b><small>email or WhatsApp</small></div>
+      </div>
+      <div class="mock mail">
+        <div class="mh"><span class="dot"></span><b>Contact form · website</b><span class="t">09:41</span></div>
+        <p class="ms">New enquiry: website quote</p>
+        <table><tbody><tr><th scope="row">Name</th><td>Giulia Bianchi</td></tr><tr><th scope="row">Email</th><td>giulia@studiobianchi.it</td></tr><tr><th scope="row">Service</th><td>WordPress site</td></tr><tr><th scope="row">CRM</th><td><span class="pill">Saved · to call back</span></td></tr></tbody></table>
+      </div>
+    </div>
+
+    <div class="auto">
+      <h3>2. Applications and replies in a sheet, with a summary every morning</h3>
+      <p>Emails from companies are picked out and logged in Google Sheets with date, company and status. Every morning an email lists who replied and who to follow up. I use it for my own job search.</p>
+      <div class="flow">
+        <div class="node"><i class="c-mail"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></i><b>Gmail</b><small>new email</small></div>
+        <div class="node"><i class="c-filter"><svg viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4-2v-4z"></path></svg></i><b>Filter</b><small>companies only</small></div>
+        <div class="node"><i class="c-sheet"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M4 9h16M4 15h16M10 3v18"></path></svg></i><b>Google Sheets</b><small>adds a row</small></div>
+        <div class="node"><i class="c-clock"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></i><b>Every morning</b><small>08:45</small></div>
+        <div class="node"><i class="c-mail"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></i><b>Summary</b><small>by email</small></div>
+      </div>
+      <div class="mock sheet">
+        <div class="mh"><span class="dot g"></span><b>Applications</b><span class="t">Google Sheets</span></div>
+        <table>
+          <tbody><tr class="th"><th scope="col">Date</th><th scope="col">Company</th><th scope="col">Role</th><th scope="col">Status</th></tr>
+          <tr><td>03/11</td><td>Agenzia Web Nord</td><td>WordPress dev</td><td><span class="pill">Interview</span></td></tr>
+          <tr><td>05/11</td><td>Studio Pixel</td><td>PHP dev</td><td><span class="pill y">Waiting</span></td></tr>
+          <tr><td>07/11</td><td>Digital Lab</td><td>Full stack</td><td><span class="pill r">Follow up</span></td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <div class="auto">
+      <h3>3. Leads from campaigns with automatic reminders</h3>
+      <p>At Formagroup, leads came in from ad campaigns. Each new lead was assigned to an adviser in the CRM; if nobody called within two days a reminder went out, and a report arrived every week.</p>
+      <div class="flow">
+        <div class="node"><i class="c-ads"><svg viewBox="0 0 24 24"><path d="M4 14V10l12-5v14L4 14z"></path><path d="M7 15l1.5 5h3L10 16"></path><path d="M19 9.5a3 3 0 0 1 0 5"></path></svg></i><b>Campaign</b><small>lead form</small></div>
+        <div class="node"><i class="c-crm"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.6c2 .7 3.2 2.5 3.6 5.4"></path></svg></i><b>CRM</b><small>assigns an adviser</small></div>
+        <div class="node"><i class="c-clock"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></i><b>After 2 days</b><small>not called yet?</small></div>
+        <div class="node"><i class="c-bell"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4z"></path><path d="M10 20a2 2 0 0 0 4 0"></path></svg></i><b>Reminder</b><small>to the adviser</small></div>
+        <div class="node"><i class="c-sheet"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg></i><b>Report</b><small>every week</small></div>
+      </div>
+    </div>
+    <p class="note" style="margin:8px 0 0">Names and data in the examples are made up. Tell me about a job your team does by hand every week, and I'll tell you whether and how it can be automated.</p>
+  </section>
+
+  <section id="lavori">
+    <h2>Work</h2>
+    <p class="note">Some sites I've built that are online. Most are in Arabic, for clients in Libya.</p>
+    <div id="projects"><div class="project">
+  <a class="shot" href="https://al-amal.ly/" target="_blank" rel="noopener"><img src="../assets/shots/al-amal-640.webp" srcset="../assets/shots/al-amal-640.webp 640w, ../assets/shots/al-amal.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Al-Amal Foundation"></a>
+  <div><h3><a href="https://al-amal.ly/" target="_blank" rel="noopener">Al-Amal Foundation</a></h3>
+  <p class="meta"><span class="wp">WordPress</span> site · volunteer foundation, Benghazi</p>
+  <p>The foundation's website: who they are, their campaigns, partners, and forms to volunteer or donate. All in Arabic.</p>
+  <p class="stack">WordPress, Elementor, Neve theme · <a href="https://al-amal.ly/" target="_blank" rel="noopener">al-amal.ly</a></p></div></div><div class="project">
+  <a class="shot" href="https://najm-ashamal.ly/" target="_blank" rel="noopener"><img src="../assets/shots/najm-ashamal-640.webp" srcset="../assets/shots/najm-ashamal-640.webp 640w, ../assets/shots/najm-ashamal.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Najm Al-Shamal"></a>
+  <div><h3><a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">Najm Al-Shamal</a></h3>
+  <p class="meta"><span class="wp">WordPress</span> site · engineering and training company</p>
+  <p>Company website with services, courses and news, plus a page where you can check that a certificate is valid.</p>
+  <p class="stack">WordPress, Elementor, Neve theme · <a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">najm-ashamal.ly</a></p></div></div><div class="project">
+  <a class="shot" href="https://i-volunteer.ly/" target="_blank" rel="noopener"><img src="../assets/shots/i-volunteer-640.webp" srcset="../assets/shots/i-volunteer-640.webp 640w, ../assets/shots/i-volunteer.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of I Volunteer"></a>
+  <div><h3><a href="https://i-volunteer.ly/" target="_blank" rel="noopener">I Volunteer</a></h3>
+  <p class="meta">Web platform and app</p>
+  <p>A platform for finding volunteer work in Libya. People search by city, apply, follow their applications from their profile and get a certificate at the end. There's also a phone app.</p>
+  <p class="stack">PHP, CodeIgniter 4, MySQL, Flutter · <a href="https://i-volunteer.ly/" target="_blank" rel="noopener">i-volunteer.ly</a></p></div></div><div class="project">
+  <a class="shot" href="https://orgs.ly/" target="_blank" rel="noopener"><img src="../assets/shots/orgs-640.webp" srcset="../assets/shots/orgs-640.webp 640w, ../assets/shots/orgs.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Orgs.ly"></a>
+  <div><h3><a href="https://orgs.ly/" target="_blank" rel="noopener">Orgs.ly</a></h3>
+  <p class="meta">Portal for organisations</p>
+  <p>A portal where several organisations share one database, with access based on each person's role, reports and a member list.</p>
+  <p class="stack">PHP, MySQL, JavaScript · <a href="https://orgs.ly/" target="_blank" rel="noopener">orgs.ly</a></p></div></div><div class="project">
+  <a class="shot" href="https://atharcso.org/" target="_blank" rel="noopener"><img src="../assets/shots/athar-640.webp" srcset="../assets/shots/athar-640.webp 640w, ../assets/shots/athar.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Athar"></a>
+  <div><h3><a href="https://atharcso.org/" target="_blank" rel="noopener">Athar</a></h3>
+  <p class="meta">Management system for organisations</p>
+  <p>An Arabic management system where organisations record their projects, members, documents and accounts, and print reports.</p>
+  <p class="stack">PHP 8, CodeIgniter 4, MySQL · <a href="https://atharcso.org/" target="_blank" rel="noopener">atharcso.org</a></p></div></div><div class="project">
+  <a class="shot" href="https://tafarrod.ly/" target="_blank" rel="noopener"><img src="../assets/shots/tafarrod-640.webp" srcset="../assets/shots/tafarrod-640.webp 640w, ../assets/shots/tafarrod.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Tafarrod"></a>
+  <div><h3><a href="https://tafarrod.ly/" target="_blank" rel="noopener">Tafarrod</a></h3>
+  <p class="meta">Website with an admin panel</p>
+  <p>An Arabic and English website for an organisation in Benghazi. Projects, events and news are updated from an admin panel I wrote.</p>
+  <p class="stack">PHP, MySQL · <a href="https://tafarrod.ly/" target="_blank" rel="noopener">tafarrod.ly</a></p></div></div></div>
+  </section>
+
+  <section id="competenze">
+    <h2>Skills</h2>
+    <p class="note">The tools I use and what I use them for.</p>
+    <div class="sk">
+      <div class="skr"><h3>WordPress</h3><p class="tools">WordPress, Elementor, WooCommerce, child theme, plugin</p><p>Company sites, landing pages and online shops that clients can update themselves.</p></div>
+      <div class="skr"><h3>PHP and databases</h3><p class="tools">PHP 8, CodeIgniter 4, MySQL, REST API, AJAX</p><p>Back-office systems, portals with logins and roles, APIs for mobile apps, PDF reports.</p></div>
+      <div class="skr"><h3>Frontend</h3><p class="tools">HTML, CSS, JavaScript, Bootstrap</p><p>Responsive, multilingual pages, including right-to-left for Arabic.</p></div>
+      <div class="skr"><h3>Automation and integrations</h3><p class="tools">Make, webhook, Gmail, Google Sheets, CRM (Squadd)</p><p>Connecting site, email, sheets and CRM so data moves on its own.</p></div>
+      <div class="skr"><h3>SEO and marketing</h3><p class="tools">Google Search Console, Google Analytics, Google Ads</p><p>Seeing where visits come from, fixing technical SEO, running campaigns.</p></div>
+      <div class="skr"><h3>Servers and going live</h3><p class="tools">cPanel, hosting, domini, caselle email, Git e GitHub</p><p>Publishing, migrating and keeping sites and email in order.</p></div>
+      <div class="skr"><h3>Design</h3><p class="tools">Figma, Photoshop</p><p>Reading a design, making mockups and web graphics.</p></div>
+      <div class="skr"><h3>Apps and other</h3><p class="tools">Flutter, Python, ASP.NET</p><p>Mobile apps connected to the platforms, scripts and older systems.</p></div>
+      <div class="skr"><h3>Building with AI</h3><p class="tools">Claude Code, Codex, Antigravity</p><p>They make me faster. I review and test the code myself before I hand it over.</p></div>
+    </div>
+    <p style="margin:22px 0 0"><b>Languages:</b> <span>Arabic (native), Italian (B2), English (B2)</span></p>
+  </section>
+
+  <section id="esperienza">
+    <h2>Experience</h2>
+    <ul class="jobs">
+      <li><span class="y">2017 – now</span><div><b>Freelance web developer</b><span class="d">Websites and platforms for companies and organisations, mostly in Libya</span></div></li>
+      <li><span class="y">2025 – 2026</span><div><b>IT Manager &amp; Marketing · Formagroup, Milano</b><span class="d">Company websites, an internal CRM, Google Ads campaigns and IT support</span></div></li>
+      <li><span class="y">2023 – 2024</span><div><b>IT tutor and helpdesk · City of Modena</b><span class="d">Italian civil service: computer courses for residents</span></div></li>
+      <li><span class="y">2021 – 2022</span><div><b>Technical support · Altair Handling, Libya</b><span class="d">Built a boarding pass printing system with a partner airline</span></div></li>
+      <li><span class="y">2019 – 2020</span><div><b>Desktop developer · Libyan Ministry of Education</b><span class="d">Management system for the national multiple-choice exams</span></div></li>
+    </ul>
+    <p class="note" style="margin:18px 0 0">I'm studying Computer Engineering at the University of Modena and Reggio Emilia.</p>
+  </section>
+
+  <section id="contatti" class="contact">
+    <h2>Contact</h2>
+    <p>The quickest way to reach me is by email.</p>
+    <p><a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a><br>
+    <a href="https://www.linkedin.com/in/awam-develops/" target="_blank" rel="noopener">linkedin.com/in/awam-develops</a><br>
+    <a href="https://github.com/awam97" target="_blank" rel="noopener">github.com/awam97</a><br>
+    <a href="../cv/Awam-Zeyad-CV.pdf" download="">Download my CV (PDF)</a></p>
+  </section>
+</main>
+
+<footer><div class="wrap"><img src="../assets/brand/logo-white-340.webp" width="340" height="95" alt="Awam Develops" loading="lazy"><span>Awam Zeyad · Milano · <a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a></span></div></footer>
+
+
+
+
+</body></html>

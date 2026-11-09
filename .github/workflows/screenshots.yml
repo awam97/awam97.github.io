@@ -17,6 +17,15 @@ jobs:
         with: { node-version: 20 }
       - run: npm i --no-save playwright@1.47.2 && npx playwright install --with-deps chromium
       - run: node scripts/shots.mjs
+      - name: Make 640px WebP versions
+        run: |
+          pip install --quiet pillow
+          python3 -c "
+          import glob
+          from PIL import Image
+          for f in glob.glob('assets/shots/*.jpg'):
+              Image.open(f).convert('RGB').resize((640,400),Image.LANCZOS).save(f[:-4]+'-640.webp','WEBP',quality=78,method=6)
+          "
       - name: Commit screenshots
         run: |
           git config user.name "github-actions[bot]"
