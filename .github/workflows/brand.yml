@@ -1,0 +1,26 @@
+name: Brand assets from awam.ly
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/brand.yml']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download logos and icons
+        run: |
+          mkdir -p assets/brand
+          for f in images/logo-color.png images/logo-white.png favicon.ico apple-touch-icon.png; do
+            curl -fsSL "https://awam.ly/$f" -o "assets/brand/$(basename $f)"
+          done
+          file assets/brand/*
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/brand
+          git diff --cached --quiet || (git commit -m "Add brand assets from awam.ly" && git push)
