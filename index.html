@@ -301,7 +301,7 @@ html{scroll-padding-top:24px}
   background: linear-gradient(115deg, rgba(94, 24, 87, .95), rgba(119, 32, 110, .85)), var(--band-image) center / cover no-repeat #77206e;
   border: 0;
 }
-#solutions.image-band { --band-image: url("/assets/shots/orgs.jpg"); }
+#esperienza.image-band { --band-image: url("/assets/shots/orgs.jpg"); }
 #contatti.image-band { --band-image: url("/assets/shots/al-amal.jpg"); }
 .image-band h2 { color: #fff; }
 .image-band .note { color: #faebf8; }
@@ -310,6 +310,11 @@ html{scroll-padding-top:24px}
 .image-band :focus-visible { outline-color: #fff; }
 .image-band .contact { padding: 0; margin-block: 0; background: transparent; border: 0; }
 .site-main + footer { margin-top: 0; }
+#esperienza.image-band .jobs .y,
+#esperienza.image-band .jobs .d { color: #faebf8; }
+#esperienza.image-band .jobs li { border-color: rgba(255,255,255,.28); }
+#esperienza.image-band a { color: #fff; }
+#solutions { border-top: 0; }
 </style>
 </head>
 <body>
@@ -349,9 +354,7 @@ html{scroll-padding-top:24px}
   </div>
   <div class="wrap">
 
-  </div>
-  <section id="solutions" class="image-band" aria-labelledby="solutions-heading">
-    <div class="wrap">
+  <section id="solutions" aria-labelledby="solutions-heading">
     <h2 id="solutions-heading">Systems for your business</h2>
     <p class="note">Explore the kinds of tools I can build and integrate for your team.</p>
     <div class="solution-grid">
@@ -359,9 +362,7 @@ html{scroll-padding-top:24px}
       <a href="#servizi"><strong><svg class="awam-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3z M3 9h18 M9 9v11"/></svg>Client portals</strong><span>Custom PHP applications, user access and dashboards.</span></a>
       <a href="#automazioni"><strong><svg class="awam-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-8 12h6l-1 8 9-12h-6z"/></svg>Workflow automation</strong><span>Connect website enquiries, spreadsheets and CRM tools.</span></a>
     </div>
-    </div>
   </section>
-  <div class="wrap">
 
   <section id="about">
     <h2>About</h2>
@@ -383,7 +384,9 @@ html{scroll-padding-top:24px}
     </div>
   </section>
 
-  <section id="esperienza">
+  </div>
+  <section id="esperienza" class="image-band">
+    <div class="wrap">
     <h2>Experience</h2>
     <ul class="jobs">
       <li><span class="y">2017 – now</span><div><b>Freelance web developer</b><span class="d">Websites and platforms for companies and organisations, mostly in Libya</span></div></li>
@@ -393,7 +396,9 @@ html{scroll-padding-top:24px}
       <li><span class="y">2019 – 2020</span><div><b>Desktop developer · Libyan Ministry of Education</b><span class="d">Management system for the national multiple-choice exams</span></div></li>
     </ul>
     <p class="note" style="margin:18px 0 0">I'm studying Computer Engineering at the University of Modena and Reggio Emilia.</p>
+    </div>
   </section>
+  <div class="wrap">
 
   <section id="lavori">
     <h2>Selected projects</h2>
