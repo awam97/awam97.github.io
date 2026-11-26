@@ -242,6 +242,41 @@ html{scroll-padding-top:24px}
 #esperienza .jobs li{border-bottom:1px solid var(--line);padding-block:16px}
 #esperienza .jobs li:last-child{border-bottom:0}
 @media(max-width:640px){.intro{grid-template-columns:minmax(0,1fr)}.hero-portrait{max-width:155px}}
+
+/* Profile and solutions */
+.intro{
+  background:radial-gradient(ellipse at 85% 20%,#53204e 0%,transparent 57%),#201323;
+  color:#fff;
+  border:1px solid #53204e;
+  grid-template-columns:minmax(0,1fr) minmax(160px,255px);
+  gap:clamp(24px,6vw,70px);
+  padding:clamp(26px,7vw,76px);
+}
+.intro h1{font-size:clamp(2.5rem,7vw,4.65rem);margin-block:8px 12px}
+.intro p,.intro .hero-kicker,.intro .profile-role{color:#f2e3ef}
+.intro .hero-kicker{font-size:.84rem}
+.intro .hero-portrait{background:#39223b;color:#fff;border-color:#654061}
+.intro .hero-actions a{background:#f6e7f4;color:#46163f;border-color:#f6e7f4}
+.intro .hero-actions .secondary{background:transparent;color:#fff;border-color:#bf9cb9}
+.intro .hero-actions a:hover{background:#fff;color:#46163f}
+.intro .links a{color:#fae7f7}
+.intro :focus-visible{outline-color:white}
+.solution-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.solution-grid a{
+  display:grid;
+  gap:10px;
+  align-content:start;
+  padding:22px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--bg-2);
+  text-decoration:none;
+}
+.solution-grid a:hover{border-color:var(--purple)}
+.solution-grid span{color:var(--muted);font-size:.9rem}
+@media(max-width:640px){
+  .intro,.solution-grid{grid-template-columns:minmax(0,1fr)}
+}
 </style>
 </head>
 <body>
@@ -250,6 +285,7 @@ html{scroll-padding-top:24px}
     <a class="logo" href="#"><picture><img src="/assets/brand/logo-color-340.webp" width="340" height="74" alt="Awam Develops"></picture></a>
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
+      <a href="#solutions">Systems</a>
       <a href="#servizi">Services</a>
       <a href="#automazioni">Automation</a>
       <a href="#lavori">Work</a>
@@ -266,16 +302,26 @@ html{scroll-padding-top:24px}
       <h1>Awam Zeyad</h1>
       <p class="profile-role">Web Developer</p>
       <p>I build WordPress and WooCommerce sites, custom PHP applications, and automations for businesses and agencies. I can also look after your site after launch.</p>
-      <div class="hero-actions"><a href="#contatti">Work with me</a><a class="secondary" href="#lavori">View my work</a></div>
+      <div class="hero-actions"><a href="/cv/Awam-Zeyad-CV.pdf" download>Download CV</a><a class="secondary" href="#solutions">Explore systems</a><a class="secondary" href="#contatti">Contact</a></div>
       <div class="links">
         <a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a>
         <a href="https://www.linkedin.com/in/awam-develops/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/awam97" target="_blank" rel="noopener">GitHub</a>
-        <a href="/cv/Awam-Zeyad-CV.pdf" download="">CV (PDF)</a>
+        
       </div>
     </div>
     <figure class="hero-portrait"><picture><source srcset="/assets/awam-256.webp" type="image/webp"><img src="/assets/awam-256.jpg" width="256" height="256" alt="Photo of Awam Zeyad"></picture><figcaption>Awam Zeyad · Web developer since 2017</figcaption></figure>
   </div>
+
+  <section id="solutions" aria-labelledby="solutions-heading">
+    <h2 id="solutions-heading">Systems for your business</h2>
+    <p class="note">Explore the kinds of tools I can build and integrate for your team.</p>
+    <div class="solution-grid">
+      <a href="#servizi"><strong>Online stores</strong><span>WooCommerce, payments and order management.</span></a>
+      <a href="#servizi"><strong>Client portals</strong><span>Custom PHP applications, user access and dashboards.</span></a>
+      <a href="#automazioni"><strong>Workflow automation</strong><span>Connect website enquiries, spreadsheets and CRM tools.</span></a>
+    </div>
+  </section>
 
   <section id="about">
     <h2>About</h2>
