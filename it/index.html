@@ -259,15 +259,7 @@ h1, h2, h3, h4, h5, h6 { font-family: Manrope, system-ui, sans-serif; font-weigh
 #projects > .project:focus-within,
 #projects > .project:hover { border-color: #af7ba9; }
 @media (min-width: 821px) {
-  #projects > .project:first-child {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: minmax(0,1.5fr) minmax(0,1fr);
-    align-items: center;
-    background: var(--bg-2);
-  }
-  #projects > .project:first-child .shot { margin: 12px; }
-  #projects > .project:first-child h3 { font-size: 1.85rem; }
+  #projects { grid-template-columns: repeat(3,minmax(0,1fr)); }
 }
 @media (max-width: 640px) {
   #projects { grid-template-columns: minmax(0,1fr); gap: 18px; }
@@ -310,32 +302,32 @@ h1, h2, h3, h4, h5, h6 { font-family: Manrope, system-ui, sans-serif; font-weigh
     <h2>Progetti selezionati</h2>
     <p class="note">Siti e piattaforme su misura realizzati per aziende e organizzazioni in Italia e Libia.</p>
     <div id="projects"><div class="project">
-  <a class="shot" href="https://al-amal.ly/" target="_blank" rel="noopener"><img src="/assets/shots/al-amal-640.webp" srcset="/assets/shots/al-amal-640.webp 640w, /assets/shots/al-amal.jpg 1280w" sizes="(min-width: 821px) 620px, (max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Fondazione Al-Amal"></a>
+  <a class="shot" href="https://al-amal.ly/" target="_blank" rel="noopener"><img src="/assets/shots/al-amal-640.webp" srcset="/assets/shots/al-amal-640.webp 640w, /assets/shots/al-amal.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), (max-width: 820px) 400px, 350px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Fondazione Al-Amal"></a>
   <div><h3><a href="https://al-amal.ly/" target="_blank" rel="noopener">Fondazione Al-Amal</a></h3>
   <p class="meta">Sito <span class="wp">WordPress</span> · associazione di volontariato, Bengasi</p>
   <p>Il sito della fondazione: chi sono, le campagne, i partner e i moduli per diventare volontario o fare una donazione. Tutto in arabo.</p>
   <p class="stack">WordPress, Elementor, tema Neve · <a href="https://al-amal.ly/" target="_blank" rel="noopener">al-amal.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://najm-ashamal.ly/" target="_blank" rel="noopener"><img src="/assets/shots/najm-ashamal-640.webp" srcset="/assets/shots/najm-ashamal-640.webp 640w, /assets/shots/najm-ashamal.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Najm Al-Shamal"></a>
+  <a class="shot" href="https://najm-ashamal.ly/" target="_blank" rel="noopener"><img src="/assets/shots/najm-ashamal-640.webp" srcset="/assets/shots/najm-ashamal-640.webp 640w, /assets/shots/najm-ashamal.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), (max-width: 820px) 400px, 350px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Najm Al-Shamal"></a>
   <div><h3><a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">Najm Al-Shamal</a></h3>
   <p class="meta">Sito <span class="wp">WordPress</span> · società di ingegneria e formazione</p>
   <p>Sito aziendale con servizi, corsi e notizie, più una pagina dove si può verificare se un attestato è valido.</p>
   <p class="stack">WordPress, Elementor, tema Neve · <a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">najm-ashamal.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://i-volunteer.ly/" target="_blank" rel="noopener"><img src="/assets/shots/i-volunteer-640.webp" srcset="/assets/shots/i-volunteer-640.webp 640w, /assets/shots/i-volunteer.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito I Volunteer"></a>
+  <a class="shot" href="https://i-volunteer.ly/" target="_blank" rel="noopener"><img src="/assets/shots/i-volunteer-640.webp" srcset="/assets/shots/i-volunteer-640.webp 640w, /assets/shots/i-volunteer.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), (max-width: 820px) 400px, 350px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito I Volunteer"></a>
   <div><h3><a href="https://i-volunteer.ly/" target="_blank" rel="noopener">I Volunteer</a></h3>
   <p class="meta">Piattaforma web e app</p>
   <p>Piattaforma per trovare attività di volontariato in Libia. Gli utenti cercano per città, si candidano, seguono le candidature dal loro profilo e ricevono un attestato a fine attività. C'è anche un'app per telefono.</p>
   <p class="stack">PHP, CodeIgniter 4, MySQL, Flutter · <a href="https://i-volunteer.ly/" target="_blank" rel="noopener">i-volunteer.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://orgs.ly/" target="_blank" rel="noopener"><img src="/assets/shots/orgs-640.webp" srcset="/assets/shots/orgs-640.webp 640w, /assets/shots/orgs.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Orgs.ly"></a>
+  <a class="shot" href="https://orgs.ly/" target="_blank" rel="noopener"><img src="/assets/shots/orgs-640.webp" srcset="/assets/shots/orgs-640.webp 640w, /assets/shots/orgs.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), (max-width: 820px) 400px, 350px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Orgs.ly"></a>
   <div><h3><a href="https://orgs.ly/" target="_blank" rel="noopener">Orgs.ly</a></h3>
   <p class="meta">Portale per associazioni</p>
   <p>Un portale dove più associazioni condividono un unico database, con accessi diversi in base al ruolo, report e un elenco dei membri.</p>
   <p class="stack">PHP, MySQL, JavaScript · <a href="https://orgs.ly/" target="_blank" rel="noopener">orgs.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://atharcso.org/" target="_blank" rel="noopener"><img src="/assets/shots/athar-640.webp" srcset="/assets/shots/athar-640.webp 640w, /assets/shots/athar.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Athar"></a>
+  <a class="shot" href="https://atharcso.org/" target="_blank" rel="noopener"><img src="/assets/shots/athar-640.webp" srcset="/assets/shots/athar-640.webp 640w, /assets/shots/athar.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), (max-width: 820px) 400px, 350px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Athar"></a>
   <div><h3><a href="https://atharcso.org/" target="_blank" rel="noopener">Athar</a></h3>
   <p class="meta">Gestionale per associazioni</p>
   <p>Un gestionale in arabo dove le associazioni registrano progetti, membri, documenti e conti, e stampano i report.</p>
   <p class="stack">PHP 8, CodeIgniter 4, MySQL · <a href="https://atharcso.org/" target="_blank" rel="noopener">atharcso.org</a></p></div></div><div class="project">
-  <a class="shot" href="https://tafarrod.ly/" target="_blank" rel="noopener"><img src="/assets/shots/tafarrod-640.webp" srcset="/assets/shots/tafarrod-640.webp 640w, /assets/shots/tafarrod.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Tafarrod"></a>
+  <a class="shot" href="https://tafarrod.ly/" target="_blank" rel="noopener"><img src="/assets/shots/tafarrod-640.webp" srcset="/assets/shots/tafarrod-640.webp 640w, /assets/shots/tafarrod.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), (max-width: 820px) 400px, 350px" width="640" height="400" loading="lazy" decoding="async" alt="Schermata del sito Tafarrod"></a>
   <div><h3><a href="https://tafarrod.ly/" target="_blank" rel="noopener">Tafarrod</a></h3>
   <p class="meta">Sito con pannello di amministrazione</p>
   <p>Sito in arabo e inglese per un'organizzazione di Bengasi. Progetti, eventi e notizie si aggiornano da un pannello che ho scritto io.</p>
