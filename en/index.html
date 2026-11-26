@@ -293,6 +293,23 @@ html{scroll-padding-top:24px}
   border-radius:0;
   padding:clamp(30px,6vw,76px) 0;
 }
+
+/* Full-width image sections */
+.image-band {
+  padding-block: clamp(48px, 8vw, 92px);
+  color: #fff;
+  background: linear-gradient(115deg, rgba(94, 24, 87, .95), rgba(119, 32, 110, .85)), var(--band-image) center / cover no-repeat #77206e;
+  border: 0;
+}
+#solutions.image-band { --band-image: url("/assets/shots/orgs.jpg"); }
+#contatti.image-band { --band-image: url("/assets/shots/al-amal.jpg"); }
+.image-band h2 { color: #fff; }
+.image-band .note { color: #faebf8; }
+.image-band .solution-grid a { background: #fff; }
+.image-band .solution-grid a:hover { border-color: #e0bfdc; box-shadow: 0 0 0 2px #e0bfdc; }
+.image-band :focus-visible { outline-color: #fff; }
+.image-band .contact { padding: 0; margin-block: 0; background: transparent; border: 0; }
+.site-main + footer { margin-top: 0; }
 </style>
 </head>
 <body>
@@ -332,7 +349,9 @@ html{scroll-padding-top:24px}
   </div>
   <div class="wrap">
 
-  <section id="solutions" aria-labelledby="solutions-heading">
+  </div>
+  <section id="solutions" class="image-band" aria-labelledby="solutions-heading">
+    <div class="wrap">
     <h2 id="solutions-heading">Systems for your business</h2>
     <p class="note">Explore the kinds of tools I can build and integrate for your team.</p>
     <div class="solution-grid">
@@ -340,7 +359,9 @@ html{scroll-padding-top:24px}
       <a href="#servizi"><strong><svg class="awam-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3z M3 9h18 M9 9v11"/></svg>Client portals</strong><span>Custom PHP applications, user access and dashboards.</span></a>
       <a href="#automazioni"><strong><svg class="awam-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-8 12h6l-1 8 9-12h-6z"/></svg>Workflow automation</strong><span>Connect website enquiries, spreadsheets and CRM tools.</span></a>
     </div>
+    </div>
   </section>
+  <div class="wrap">
 
   <section id="about">
     <h2>About</h2>
@@ -505,15 +526,17 @@ html{scroll-padding-top:24px}
     <p class="note" style="margin:8px 0 0">Names and data in the examples are made up. Tell me about a job your team does by hand every week, and I'll tell you whether and how it can be automated.</p>
   </section>
 
-  <section id="contatti" class="contact">
+  </div>
+  <section id="contatti" class="image-band" aria-labelledby="contact-heading">
+    <div class="wrap contact">
     <div>
-      <h2>Tell me about your project</h2>
+      <h2 id="contact-heading">Tell me about your project</h2>
       <p>Need a new site, help with an existing one, or a custom tool? Tell me what you’re working on.</p>
       <div class="contact-links"><a href="https://www.linkedin.com/in/awam-develops/" target="_blank" rel="noopener">LinkedIn</a> <a href="https://github.com/awam97" target="_blank" rel="noopener">GitHub</a> <a href="/cv/Awam-Zeyad-CV.pdf" download="">Download my CV (PDF)</a></div>
     </div>
     <a class="contact-email" href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a>
+    </div>
   </section>
-  </div>
 </main>
 
 <footer><div class="wrap"><img src="/assets/brand/logo-white-340.webp" width="340" height="95" alt="Awam Develops" loading="lazy"><span>Awam Zeyad · Milano · <a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a></span></div></footer>
