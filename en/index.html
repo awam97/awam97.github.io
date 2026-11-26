@@ -203,6 +203,33 @@ section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-
  .hero-portrait{max-width:240px}
 }
 @media(prefers-reduced-motion:reduce){#projects .project,#projects .project .shot img{transition:none}#projects .project:hover .shot img{transform:none}}
+
+/* Featured work and contact */
+#lavori > .note{max-width:62ch}
+#projects{grid-template-columns:repeat(6,minmax(0,1fr))}
+#projects > .project{grid-column:span 2}
+#projects > .project:nth-child(-n+2){grid-column:span 3;background:var(--bg-2)}
+#projects > .project:nth-child(-n+2) .shot{aspect-ratio:16/9}
+#projects > .project:nth-child(-n+2) h3{font-size:1.3rem}
+#projects .project .shot{border-bottom:1px solid var(--line)}
+.prob{padding:24px;border-radius:14px}
+.prob .q{font-size:1.05rem;color:var(--purple-dark)}
+.contact{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;margin-bottom:48px;padding:clamp(24px,5vw,48px);border-radius:20px;background:var(--purple-dark);color:#fff}
+.contact h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;margin-bottom:12px}
+.contact p{max-width:45ch;margin:0;color:#f1deef}
+.contact a{color:white}
+.contact a:focus-visible{outline-color:white}
+.contact-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;font-size:.875rem}
+.contact .contact-email{display:inline-flex;justify-content:center;align-items:center;min-height:44px;padding:10px 18px;border-radius:8px;background:white;color:var(--purple-dark);font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+.contact .contact-email:hover{background:#f1deef}
+@media(max-width:820px){
+ #projects{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #projects > .project,#projects > .project:nth-child(-n+2){grid-column:auto}
+}
+@media(max-width:640px){
+ #projects,.contact{grid-template-columns:minmax(0,1fr)}
+ .contact-email{justify-self:start}
+}
 </style>
 </head>
 <body>
@@ -237,8 +264,8 @@ section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-
   </div>
 
   <section id="lavori">
-    <h2>Work</h2>
-    <p class="note">Some sites I've built that are online. Most are in Arabic, for clients in Libya.</p>
+    <h2>Selected projects</h2>
+    <p class="note">Client websites and custom platforms built for businesses and organisations in Italy and Libya.</p>
     <div id="projects"><div class="project">
   <a class="shot" href="https://al-amal.ly/" target="_blank" rel="noopener"><img src="../assets/shots/al-amal-640.webp" srcset="../assets/shots/al-amal-640.webp 640w, ../assets/shots/al-amal.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Al-Amal Foundation"></a>
   <div><h3><a href="https://al-amal.ly/" target="_blank" rel="noopener">Al-Amal Foundation</a></h3>
@@ -298,14 +325,14 @@ section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-
     <h2>What I can fix for you</h2>
     <p class="note">The problems people bring me most often, and how I solve them.</p>
     <div class="probs">
-      <div class="prob"><p class="q">"The site is slow and loads badly on phones."</p><p>I compress images, sort out caching and heavy plugins, and change hosting if needed. I measure with PageSpeed before and after, so you can see the difference.</p></div>
-      <div class="prob"><p class="q">"Nobody updates the site, and I'm afraid it will break."</p><p>Monthly maintenance: backups, updates tested on a copy first, security checks and bug fixes.</p></div>
-      <div class="prob"><p class="q">"I have a Figma design and need someone to turn it into a site."</p><p>I build it in WordPress, with Elementor or a custom theme, true to the design and easy for the client to edit.</p></div>
-      <div class="prob"><p class="q">"I want to sell online."</p><p>A WooCommerce shop with products, payments, shipping and order emails, plus small plugins when something specific is needed.</p></div>
-      <div class="prob"><p class="q">"Enquiries from the site get lost, or I copy them by hand."</p><p>I connect the site's form to the CRM, Google Sheets and email with Make: every enquiry is saved, you get an alert and the client gets a reply straight away.</p></div>
-      <div class="prob"><p class="q">"Spreadsheets and email aren't enough to run the work any more."</p><p>I build a custom system in PHP and CodeIgniter: logins with users and roles, records, PDF reports, and a connected app if needed.</p></div>
-      <div class="prob"><p class="q">"The site can't be found on Google."</p><p>I fix the technical SEO: titles, structure, sitemap, speed, Search Console and Analytics, so you know where visits come from.</p></div>
-      <div class="prob"><p class="q">"Our agency has more work than developers."</p><p>I join your workflow remotely, per project or for a few days a month, using your tools and your rules.</p></div>
+      <div class="prob"><h3 class="q">Website speed</h3><p>I compress images, sort out caching and heavy plugins, and change hosting if needed. I measure with PageSpeed before and after, so you can see the difference.</p></div>
+      <div class="prob"><h3 class="q">Monthly maintenance</h3><p>Monthly maintenance: backups, updates tested on a copy first, security checks and bug fixes.</p></div>
+      <div class="prob"><h3 class="q">Figma to WordPress</h3><p>I build it in WordPress, with Elementor or a custom theme, true to the design and easy for the client to edit.</p></div>
+      <div class="prob"><h3 class="q">WooCommerce stores</h3><p>A WooCommerce shop with products, payments, shipping and order emails, plus small plugins when something specific is needed.</p></div>
+      <div class="prob"><h3 class="q">Lead capture and automation</h3><p>I connect the site's form to the CRM, Google Sheets and email with Make: every enquiry is saved, you get an alert and the client gets a reply straight away.</p></div>
+      <div class="prob"><h3 class="q">Custom business applications</h3><p>I build a custom system in PHP and CodeIgniter: logins with users and roles, records, PDF reports, and a connected app if needed.</p></div>
+      <div class="prob"><h3 class="q">Technical SEO</h3><p>I fix the technical SEO: titles, structure, sitemap, speed, Search Console and Analytics, so you know where visits come from.</p></div>
+      <div class="prob"><h3 class="q">Development support for agencies</h3><p>I join your workflow remotely, per project or for a few days a month, using your tools and your rules.</p></div>
     </div>
   </section>
 
@@ -397,12 +424,12 @@ section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-
   </section>
 
   <section id="contatti" class="contact">
-    <h2>Contact</h2>
-    <p>The quickest way to reach me is by email.</p>
-    <p><a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a><br>
-    <a href="https://www.linkedin.com/in/awam-develops/" target="_blank" rel="noopener">linkedin.com/in/awam-develops</a><br>
-    <a href="https://github.com/awam97" target="_blank" rel="noopener">github.com/awam97</a><br>
-    <a href="../cv/Awam-Zeyad-CV.pdf" download="">Download my CV (PDF)</a></p>
+    <div>
+      <h2>Tell me about your project</h2>
+      <p>Need a new site, help with an existing one, or a custom tool? Tell me what you’re working on.</p>
+      <div class="contact-links"><a href="https://www.linkedin.com/in/awam-develops/" target="_blank" rel="noopener">LinkedIn</a> <a href="https://github.com/awam97" target="_blank" rel="noopener">GitHub</a> <a href="../cv/Awam-Zeyad-CV.pdf" download="">Download my CV (PDF)</a></div>
+    </div>
+    <a class="contact-email" href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a>
   </section>
 </main>
 
