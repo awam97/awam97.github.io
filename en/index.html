@@ -317,6 +317,25 @@ html{scroll-padding-top:24px}
 #solutions { border-top: 0; }
 
 .whatsapp-float{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:30;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#087d53;color:#fff;box-shadow:0 4px 16px #0003}.whatsapp-float:hover{background:#056644;color:#fff}.whatsapp-float:focus-visible{outline:3px solid #77206e;outline-offset:3px}
+
+/* Portfolio hero */
+.hero-band{background:radial-gradient(ellipse at 80% 35%,#eed6ec,transparent 62%),#fbf6fa;color:var(--ink);border-bottom:1px solid var(--line)}
+.hero-band .intro{color:var(--ink);grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding-block:clamp(48px,8vw,100px);gap:clamp(28px,5vw,64px)}
+.hero-band .hero-kicker{color:var(--purple-dark);font-weight:600}
+.hero-band h1{font-size:clamp(2.35rem,5.4vw,4.4rem);line-height:1.05;max-width:14ch}
+.hero-band .hero-summary{color:var(--muted);max-width:47ch}
+.hero-band .hero-actions a{background:var(--purple);color:#fff;border-color:var(--purple)}
+.hero-band .hero-actions .secondary{background:transparent;color:var(--purple-dark);border-color:#a86da2}
+.hero-band .hero-actions a:hover{background:var(--purple-dark);color:#fff}
+.hero-band :focus-visible{outline-color:var(--purple)}
+.hero-showcase{position:relative;min-width:0;margin:0;padding:0 0 16%}
+.hero-shot{display:block;overflow:hidden;border:1px solid #d8bed6;border-radius:12px;background:#fff;box-shadow:0 16px 40px #53204e24}
+.hero-shot::before{content:"";display:block;height:18px;background:radial-gradient(circle,#aa72a3 2px,transparent 2.6px) 8px center / 9px 9px repeat-x #f5eaf4;background-repeat:no-repeat;background-size:9px 9px}
+.hero-shot img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border:0;border-radius:0;box-shadow:none}
+.hero-shot-front{position:absolute;right:0;bottom:0;width:54%}
+@media(max-width:740px){.hero-band .intro{grid-template-columns:minmax(0,1fr)}.hero-showcase{width:min(100%,520px)}}
+
+.about-portrait{float:right;width:96px;margin:0 0 16px 20px}.about-portrait img{border-radius:12px}#about{display:flow-root}
 </style>
 </head>
 <body>
@@ -338,21 +357,20 @@ html{scroll-padding-top:24px}
 <main class="site-main">
   <div class="hero-band">
     <div class="intro wrap">
-    <div>
-      <p class="hero-kicker">Web development · Milan &amp; remote</p>
-      <h1>Awam Zeyad</h1>
-      <p class="profile-role">Web Developer</p>
-      <p>I build WordPress and WooCommerce sites, custom PHP applications, and automations for businesses and agencies. I can also look after your site after launch.</p>
-      <div class="hero-actions"><a href="/cv/Awam-Zeyad-CV.pdf" download><svg class="awam-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>Download CV</a><a class="secondary" href="#solutions"><svg class="awam-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6H4z M14 4h6v6h-6z M4 14h6v6H4z M14 14h6v6h-6z"/></svg>Explore systems</a><a class="secondary" href="#contatti"><svg class="awam-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg>Contact</a></div>
-      <div class="links">
-        <a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a>
-        <a href="https://www.linkedin.com/in/awam-develops/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/awam97" target="_blank" rel="noopener">GitHub</a>
-        
+      <div>
+        <p class="hero-kicker">Awam Zeyad · Web developer in Milan</p>
+        <h1>Websites and tools built around your business.</h1>
+        <p class="hero-summary">I build WordPress sites, WooCommerce stores and custom PHP tools for businesses and agencies. I also help teams automate repetitive work.</p>
+        <div class="hero-actions">
+          <a href="#contatti">Discuss your project</a>
+          <a class="secondary" href="#lavori">See my work</a>
+        </div>
+      </div>
+      <div class="hero-showcase">
+        <a class="hero-shot" href="#lavori" aria-label="See selected work featuring Al-Amal"><img src="/assets/shots/al-amal-640.webp" width="640" height="400" alt=""></a>
+        <a class="hero-shot hero-shot-front" href="#lavori" aria-label="See selected work featuring Orgs.ly"><img src="/assets/shots/orgs-640.webp" width="640" height="400" alt=""></a>
       </div>
     </div>
-    <figure class="hero-portrait"><picture><source srcset="/assets/awam-256.webp" type="image/webp"><img src="/assets/awam-256.jpg" width="256" height="256" alt="Photo of Awam Zeyad"></picture><figcaption>Awam Zeyad · Web developer since 2017</figcaption></figure>
-  </div>
   </div>
   <div class="wrap">
 
@@ -368,6 +386,7 @@ html{scroll-padding-top:24px}
 
   <section id="about">
     <h2>About</h2>
+    <div class="about-portrait"><picture><source srcset="/assets/awam-256.webp" type="image/webp"><img loading="lazy" src="/assets/awam-256.jpg" width="256" height="256" alt="Photo of Awam Zeyad"></picture></div>
     <p>I've been developing websites since 2017, first in Libya and now from Milan. I work remotely with businesses and agencies on new builds, ongoing maintenance and improvements to existing sites.</p>
   </section>
 
