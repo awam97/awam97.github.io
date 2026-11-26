@@ -163,70 +163,52 @@ footer a{color:#fff}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media (max-width:640px){#projects{grid-template-columns:1fr;gap:18px}#projects .project>div{padding:18px}}
 
-/* Business website hero refinement */
-.wrap{max-width:1120px}
-.intro{position:relative;align-items:center;gap:52px;margin:34px 0 22px;padding:72px 64px;border:1px solid var(--line);border-radius:28px;background:radial-gradient(circle at 85% 20%,color-mix(in srgb,var(--purple) 14%,transparent),transparent 36%),linear-gradient(135deg,var(--bg-2),var(--bg))}
-.intro>div{max-width:720px}.intro h1{font-size:clamp(30px,4vw,52px);letter-spacing:-.045em;line-height:1.12;margin-bottom:18px}.intro p{font-size:16px;color:var(--muted)}
-.intro .links{margin-top:24px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-actions a{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:9px;background:var(--purple);color:#fff;text-decoration:none;font-weight:600;box-shadow:0 8px 18px rgba(119,32,110,.2)}.hero-actions a:hover{background:var(--purple-dark);color:#fff;transform:translateY(-1px)}.hero-actions a.secondary{background:transparent;color:var(--purple);border:1px solid color-mix(in srgb,var(--purple) 45%,var(--line));box-shadow:none}
-section{padding:64px 0}section>h2{font-size:28px;letter-spacing:-.035em}section>.note{max-width:760px}
-.probs{grid-template-columns:repeat(4,1fr)}.prob{transition:transform .2s ease,box-shadow .2s ease}.prob:hover{transform:translateY(-3px);box-shadow:0 12px 25px rgba(20,12,35,.08)}
-@media (max-width:900px){.probs{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:680px){.intro{margin:18px 0 8px;padding:40px 24px;border-radius:20px;gap:26px}.intro h1{font-size:32px}.probs{grid-template-columns:1fr}section{padding:46px 0}}
 
-/* AWAM light brand system */
-:root{color-scheme:light;--purple:#77206e;--purple-dark:#5e1857;--ink:#241d2b;--muted:#746b7b;--line:#ebe6ef;--bg:#fff;--bg-2:#faf8fb;--soft-purple:#f5edf5}
-body{background:var(--bg);color:var(--ink);letter-spacing:-.005em}
-header{background:rgba(255,255,255,.94);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20;box-shadow:0 1px 0 rgba(119,32,110,.04)}
-.bar{height:72px}.bar nav{gap:24px}.bar nav a{font-weight:500}.bar nav a:hover{color:var(--purple)}
-.intro{background:linear-gradient(135deg,#fff 0%,#fbf7fb 100%);border-color:#eaddea;box-shadow:0 18px 50px rgba(119,32,110,.08)}
-.intro img{box-shadow:0 0 0 4px #fff,0 0 0 7px var(--purple);border:0}
-section{border-top:1px solid var(--line)}section>h2{color:var(--purple-dark)}section>.note{font-size:15px}
-.probs{grid-template-columns:repeat(2,1fr);gap:16px}.prob{border-color:var(--line);background:#fff;border-radius:14px;padding:22px 24px;box-shadow:0 4px 16px rgba(36,29,43,.035)}.prob .q{color:var(--purple-dark);font-size:16px}
-#projects{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}#projects .project{background:#fff;border-color:var(--line);box-shadow:0 6px 20px rgba(36,29,43,.05)}#projects .project>div{padding:18px 20px 20px}#projects .project h3{color:var(--ink)}
-.auto,.mock,.prob{background:#fff}.auto{border-color:var(--line);box-shadow:0 5px 18px rgba(36,29,43,.035)}
-.contact{background:var(--soft-purple);border:1px solid #eaddea;border-radius:18px;padding:28px 30px;margin-bottom:30px}.contact a{font-weight:600}
-footer{background:var(--purple-dark)}
-@media (max-width:1000px){#projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:640px){.bar{height:64px}.bar nav{gap:8px}.intro{box-shadow:0 10px 30px rgba(119,32,110,.07)}.probs,#projects{grid-template-columns:1fr}.prob{padding:19px 20px}.contact{padding:22px}}
-
-/* Centered container layout */
-.wrap{max-width:980px;margin-left:auto;margin-right:auto}
-.intro{margin-left:0;margin-right:0}
-@media (max-width:1020px){.wrap{max-width:calc(100% - 40px)}}
-@media (max-width:640px){.wrap{max-width:calc(100% - 28px)}}
-
-/* Reimplemented hero */
-.intro{display:grid;grid-template-columns:minmax(0,1fr) 230px;align-items:center;gap:58px;min-height:430px;padding:64px 70px;overflow:hidden;position:relative}
-.intro:after{content:"";position:absolute;width:300px;height:300px;right:-120px;bottom:-150px;border-radius:50%;background:color-mix(in srgb,var(--purple) 8%,transparent);pointer-events:none}
-.intro>div{grid-column:1;grid-row:1;position:relative;z-index:1;max-width:650px}.intro>picture{grid-column:2;grid-row:1;position:relative;z-index:1;justify-self:center}
-.intro>picture:before{content:"";position:absolute;inset:-18px;border:1px solid #e5d2e3;border-radius:28px;transform:rotate(7deg);z-index:-1}.intro img{width:190px;height:190px;border-radius:24px;object-fit:cover;box-shadow:0 0 0 5px #fff,0 18px 38px rgba(119,32,110,.2)}
-.hero-kicker{display:inline-flex;align-items:center;gap:8px;margin:0 0 16px;color:var(--purple);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}.hero-kicker:before{content:"";width:28px;height:2px;background:var(--purple);border-radius:2px}
-.intro h1{max-width:650px;margin-bottom:20px}.intro .links{font-size:14px;color:var(--muted)}
-@media (max-width:760px){.intro{grid-template-columns:1fr;gap:28px;padding:42px 28px;min-height:0}.intro>div{grid-column:1;grid-row:2}.intro>picture{grid-column:1;grid-row:1;justify-self:start}.intro img{width:132px;height:132px;border-radius:20px}.intro>picture:before{inset:-12px}.intro h1{font-size:34px}}
-@media (max-width:480px){.intro{padding:34px 22px}.intro h1{font-size:30px}}
-
-/* Final standards-based layout reset */
-:root{color-scheme:light;--purple:#77206e;--purple-dark:#5e1857;--ink:#211b27;--muted:#706777;--line:#e8e2ea;--bg:#fff;--bg-2:#faf8fb}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Poppins",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}a{color:var(--purple)}.wrap{width:min(1040px,calc(100% - 48px));max-width:none;margin-inline:auto;padding:0}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.bar{height:68px}.logo img{height:34px}.bar nav{gap:22px}.bar nav a{font-size:14px;color:var(--muted);font-weight:500}.bar nav a:hover{color:var(--purple)}
-.intro{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(190px,.65fr);align-items:center;gap:64px;margin:48px 0 32px;padding:64px;border:1px solid var(--line);border-radius:20px;background:var(--bg-2);box-shadow:none;min-height:0;overflow:visible}.intro:after,.intro>picture:before{display:none}.intro>div{grid-column:1;grid-row:1;max-width:680px}.intro>picture{grid-column:2;grid-row:1;justify-self:center}.intro img{width:190px;height:190px;border-radius:50%;border:5px solid var(--bg);box-shadow:0 0 0 1px #d9c3d7,0 16px 32px rgba(119,32,110,.14)}.hero-kicker{margin:0 0 14px;color:var(--purple);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}.hero-kicker:before{display:none}.intro h1{margin:0 0 18px;max-width:650px;font-size:clamp(32px,4.2vw,48px);line-height:1.12;letter-spacing:-.045em}.intro p{margin:0 0 12px;color:var(--muted)}.intro .links{margin-top:20px;gap:8px 18px;font-size:14px}.hero-actions{margin-top:26px;gap:10px}.hero-actions a{min-height:44px;padding:10px 18px;border-radius:7px;background:var(--purple);box-shadow:none}.hero-actions a.secondary{background:transparent;border:1px solid #cdb5ca;color:var(--purple)}
-section{padding:56px 0;border-top:1px solid var(--line)}section>h2{margin:0 0 8px;color:var(--ink);font-size:26px;line-height:1.2;letter-spacing:-.03em}section>.note{max-width:720px;margin:0 0 26px;color:var(--muted);font-size:15px}
-.probs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.prob{padding:22px;border:1px solid var(--line);border-radius:10px;background:var(--bg);box-shadow:none}.prob:hover{transform:none;box-shadow:none}.prob .q{color:var(--ink);font-size:15px}
-#projects{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.project,#projects .project{border:1px solid var(--line);border-radius:12px;background:var(--bg);box-shadow:none}.project:hover,#projects .project:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(33,27,39,.08)}
-.auto{border:1px solid var(--line);border-radius:12px;background:var(--bg);box-shadow:none}.contact{border:1px solid #e3d5e2;border-radius:12px;background:#fbf7fb;padding:26px}
-@media (max-width:900px){.intro{gap:38px;padding:48px}.probs{grid-template-columns:1fr 1fr}#projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:680px){.wrap{width:min(100% - 32px,560px)}.bar{height:62px}.bar nav{gap:8px}.intro{grid-template-columns:1fr;gap:28px;margin:28px 0 16px;padding:34px 24px}.intro>div{grid-column:1;grid-row:2}.intro>picture{grid-column:1;grid-row:1;justify-self:start}.intro img{width:128px;height:128px}.intro h1{font-size:32px}.probs,#projects{grid-template-columns:1fr}section{padding:44px 0}}
-
-/* Creative AWAM brand layer */
-.intro{isolation:isolate;background:linear-gradient(125deg,#5e1857 0%,#77206e 58%,#96368e 100%);border:0;color:#fff;box-shadow:0 20px 45px rgba(94,24,87,.22)}.intro:before{content:"";display:block;position:absolute;inset:0;z-index:-1;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.32) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.32) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(120deg,#000,transparent 72%);pointer-events:none}.intro h1{color:#fff}.intro p{color:rgba(255,255,255,.82)}.hero-kicker{color:#f1d9ee}.intro .links a{color:#fff}.intro .links a:hover{color:#f1d9ee}.intro img{border-color:#77206e;box-shadow:0 0 0 5px rgba(255,255,255,.16),0 20px 34px rgba(34,7,30,.28)}.hero-actions a{background:#fff;color:var(--purple);font-weight:600}.hero-actions a:hover{background:#f8edf7;color:var(--purple-dark)}.hero-actions a.secondary{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}.hero-actions a.secondary:hover{background:rgba(255,255,255,.1);color:#fff}
-section{position:relative}section>h2{display:flex;align-items:center;gap:12px}section>h2:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--purple);box-shadow:0 0 0 6px #f3e8f2}.prob{position:relative;overflow:hidden}.prob:after{content:"";position:absolute;right:-28px;bottom:-34px;width:90px;height:90px;border-radius:50%;background:#fbf3fa;z-index:0}.prob>*{position:relative;z-index:1}.prob .q{font-weight:600}.auto{border-left:4px solid var(--purple)}#projects .project{position:relative}#projects .project:before{content:"";display:block;height:4px;background:linear-gradient(90deg,var(--purple),#c37bbb);opacity:.9}#projects .project .shot{border-radius:0}
-@media (max-width:680px){.intro{border-radius:16px}.intro:before{background-size:25px 25px}}
+/* AWAM site layout */
+:root{color-scheme:light;--purple:#77206e;--purple-dark:#5e1857;--ink:#211629;--muted:#65596b;--line:#e9dfeb;--bg:#fff;--bg-2:#faf6fa}
+.wrap{width:min(1080px,calc(100% - 40px));max-width:none;padding:0}
+header{background:#fff}
+.bar{height:auto;min-height:68px;padding-block:12px}
+.bar nav{flex-wrap:wrap;justify-content:flex-end}
+.bar nav a{display:inline}
+:focus-visible{outline:3px solid var(--purple);outline-offset:4px}
+.intro{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);align-items:center;gap:clamp(24px,5vw,64px);margin:36px 0 0;padding:clamp(24px,5vw,64px);background:var(--bg-2);border:1px solid var(--line);border-radius:24px}
+.intro h1{font-size:clamp(2rem,5vw,3.55rem);line-height:1.06;letter-spacing:-.05em;margin:12px 0 18px}
+.intro p{max-width:53ch;color:var(--muted)}
+.intro .hero-kicker{font-weight:600;color:var(--purple)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.hero-actions a{display:inline-flex;align-items:center;min-height:44px;padding:9px 16px;border:1px solid var(--purple);border-radius:8px;background:var(--purple);color:white;text-decoration:none;font-weight:600}
+.hero-actions a:hover{background:var(--purple-dark)}
+.hero-actions .secondary{background:white;color:var(--purple)}
+.hero-actions .secondary:hover{background:#f1e4f0}
+.hero-portrait{margin:0;padding:16px;background:var(--purple-dark);color:white;border-radius:16px}
+.hero-portrait img{width:100%;height:auto;aspect-ratio:1;border:0;border-radius:9px;box-shadow:none}
+.hero-portrait figcaption{padding:12px 2px 0;font-size:.875rem}
+.intro .links{font-size:.84rem}
+section{padding-block:clamp(36px,6vw,70px)}
+section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-.035em}
+#lavori{border-top:0}
+#projects{grid-template-columns:repeat(3,minmax(0,1fr))}
+#projects .project{min-width:0;box-shadow:none}
+#projects .project:hover{transform:none;box-shadow:none}
+#projects .stack{overflow-wrap:anywhere}
+@media(max-width:820px){#projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){
+ .wrap{width:calc(100% - 32px)}
+ .bar{flex-wrap:wrap;gap:8px}
+ .bar nav{justify-content:flex-start;gap:6px 16px}
+ .bar nav a{font-size:.875rem}
+ .intro,#projects{grid-template-columns:minmax(0,1fr)}
+ .intro{margin-top:20px}
+ .hero-portrait{max-width:240px}
+}
+@media(prefers-reduced-motion:reduce){#projects .project,#projects .project .shot img{transition:none}#projects .project:hover .shot img{transform:none}}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#"><picture><source srcset="../assets/brand/logo-white-340.webp" media="(prefers-color-scheme: dark)"><img src="../assets/brand/logo-color-340.webp" width="340" height="74" alt="Awam Develops"></picture></a>
+    <a class="logo" href="#"><picture><img src="../assets/brand/logo-color-340.webp" width="340" height="74" alt="Awam Develops"></picture></a>
     <nav>
       <a href="#servizi">Services</a>
       <a href="#automazioni">Automation</a>
@@ -239,12 +221,11 @@ section{position:relative}section>h2{display:flex;align-items:center;gap:12px}se
 
 <main class="wrap">
   <div class="intro">
-    <picture><source srcset="../assets/awam-256.webp" type="image/webp"><img src="../assets/awam-256.jpg" width="256" height="256" alt="Photo of Awam Zeyad"></picture>
     <div>
-      <p class="hero-kicker">Websites, systems & automations</p><h1>Hi, I'm Awam. I build WordPress sites and PHP applications.</h1>
-      <p>I've been building websites since 2017, first in Libya and now from Italy. I live in Milan and work remotely.</p>
-      <p>Most of my work is WordPress (themes, Elementor, WooCommerce), and PHP with CodeIgniter when something needs to be custom: back-office systems, portals with logins, APIs for phone apps. I also look after sites once they're live.</p>
-      <p>I work remotely as a tech partner for small businesses and web agencies, per project or on an ongoing basis.</p>
+      <p class="hero-kicker">Web development · Milan &amp; remote</p>
+      <h1>Websites and tools for your business</h1>
+      <p>I’m Awam Zeyad. I build WordPress and WooCommerce sites, custom PHP applications, and automations for businesses and agencies. I can also look after your site after launch.</p>
+      <div class="hero-actions"><a href="#contatti">Work with me</a><a class="secondary" href="#lavori">View my work</a></div>
       <div class="links">
         <a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a>
         <a href="https://www.linkedin.com/in/awam-develops/" target="_blank" rel="noopener">LinkedIn</a>
@@ -252,8 +233,66 @@ section{position:relative}section>h2{display:flex;align-items:center;gap:12px}se
         <a href="../cv/Awam-Zeyad-CV.pdf" download="">CV (PDF)</a>
       </div>
     </div>
-      <div class="hero-actions"><a href="#contatti">Work with me</a><a class="secondary" href="#lavori">View my work</a></div>
+    <figure class="hero-portrait"><picture><source srcset="../assets/awam-256.webp" type="image/webp"><img src="../assets/awam-256.jpg" width="256" height="256" alt="Photo of Awam Zeyad"></picture><figcaption>Awam Zeyad · Web developer since 2017</figcaption></figure>
   </div>
+
+  <section id="lavori">
+    <h2>Work</h2>
+    <p class="note">Some sites I've built that are online. Most are in Arabic, for clients in Libya.</p>
+    <div id="projects"><div class="project">
+  <a class="shot" href="https://al-amal.ly/" target="_blank" rel="noopener"><img src="../assets/shots/al-amal-640.webp" srcset="../assets/shots/al-amal-640.webp 640w, ../assets/shots/al-amal.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Al-Amal Foundation"></a>
+  <div><h3><a href="https://al-amal.ly/" target="_blank" rel="noopener">Al-Amal Foundation</a></h3>
+  <p class="meta"><span class="wp">WordPress</span> site · volunteer foundation, Benghazi</p>
+  <p>The foundation's website: who they are, their campaigns, partners, and forms to volunteer or donate. All in Arabic.</p>
+  <p class="stack">WordPress, Elementor, Neve theme · <a href="https://al-amal.ly/" target="_blank" rel="noopener">al-amal.ly</a></p></div></div><div class="project">
+  <a class="shot" href="https://najm-ashamal.ly/" target="_blank" rel="noopener"><img src="../assets/shots/najm-ashamal-640.webp" srcset="../assets/shots/najm-ashamal-640.webp 640w, ../assets/shots/najm-ashamal.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Najm Al-Shamal"></a>
+  <div><h3><a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">Najm Al-Shamal</a></h3>
+  <p class="meta"><span class="wp">WordPress</span> site · engineering and training company</p>
+  <p>Company website with services, courses and news, plus a page where you can check that a certificate is valid.</p>
+  <p class="stack">WordPress, Elementor, Neve theme · <a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">najm-ashamal.ly</a></p></div></div><div class="project">
+  <a class="shot" href="https://i-volunteer.ly/" target="_blank" rel="noopener"><img src="../assets/shots/i-volunteer-640.webp" srcset="../assets/shots/i-volunteer-640.webp 640w, ../assets/shots/i-volunteer.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of I Volunteer"></a>
+  <div><h3><a href="https://i-volunteer.ly/" target="_blank" rel="noopener">I Volunteer</a></h3>
+  <p class="meta">Web platform and app</p>
+  <p>A platform for finding volunteer work in Libya. People search by city, apply, follow their applications from their profile and get a certificate at the end. There's also a phone app.</p>
+  <p class="stack">PHP, CodeIgniter 4, MySQL, Flutter · <a href="https://i-volunteer.ly/" target="_blank" rel="noopener">i-volunteer.ly</a></p></div></div><div class="project">
+  <a class="shot" href="https://orgs.ly/" target="_blank" rel="noopener"><img src="../assets/shots/orgs-640.webp" srcset="../assets/shots/orgs-640.webp 640w, ../assets/shots/orgs.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Orgs.ly"></a>
+  <div><h3><a href="https://orgs.ly/" target="_blank" rel="noopener">Orgs.ly</a></h3>
+  <p class="meta">Portal for organisations</p>
+  <p>A portal where several organisations share one database, with access based on each person's role, reports and a member list.</p>
+  <p class="stack">PHP, MySQL, JavaScript · <a href="https://orgs.ly/" target="_blank" rel="noopener">orgs.ly</a></p></div></div><div class="project">
+  <a class="shot" href="https://atharcso.org/" target="_blank" rel="noopener"><img src="../assets/shots/athar-640.webp" srcset="../assets/shots/athar-640.webp 640w, ../assets/shots/athar.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Athar"></a>
+  <div><h3><a href="https://atharcso.org/" target="_blank" rel="noopener">Athar</a></h3>
+  <p class="meta">Management system for organisations</p>
+  <p>An Arabic management system where organisations record their projects, members, documents and accounts, and print reports.</p>
+  <p class="stack">PHP 8, CodeIgniter 4, MySQL · <a href="https://atharcso.org/" target="_blank" rel="noopener">atharcso.org</a></p></div></div><div class="project">
+  <a class="shot" href="https://tafarrod.ly/" target="_blank" rel="noopener"><img src="../assets/shots/tafarrod-640.webp" srcset="../assets/shots/tafarrod-640.webp 640w, ../assets/shots/tafarrod.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Tafarrod"></a>
+  <div><h3><a href="https://tafarrod.ly/" target="_blank" rel="noopener">Tafarrod</a></h3>
+  <p class="meta">Website with an admin panel</p>
+  <p>An Arabic and English website for an organisation in Benghazi. Projects, events and news are updated from an admin panel I wrote.</p>
+  <p class="stack">PHP, MySQL · <a href="https://tafarrod.ly/" target="_blank" rel="noopener">tafarrod.ly</a></p></div></div>
+
+    <article class="project">
+      <a class="shot" href="https://milanobusinesscenter.it" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://milanobusinesscenter.it" alt="Screenshot of milanobusinesscenter.it" loading="lazy"><span class="sr-only">Visit website</span></a>
+      <div><h3>Milano Business Center</h3><p>Company website · business services in Milan</p><p>Website for a center dedicated to services and support for businesses and professionals.</p><p class="stack">WordPress, Elementor · <a href="https://milanobusinesscenter.it" target="_blank" rel="noopener">milanobusinesscenter.it</a></p></div>
+    </article>
+    <article class="project">
+      <a class="shot" href="https://milanobusinesstravel.it" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://milanobusinesstravel.it" alt="Screenshot of milanobusinesstravel.it" loading="lazy"><span class="sr-only">Visit website</span></a>
+      <div><h3>Milano Business Travel</h3><p>Company website · business travel</p><p>Website for travel services and assistance dedicated to professionals and businesses.</p><p class="stack">WordPress, Elementor · <a href="https://milanobusinesstravel.it" target="_blank" rel="noopener">milanobusinesstravel.it</a></p></div>
+    </article>
+    <article class="project">
+      <a class="shot" href="https://formagroup.it" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://formagroup.it" alt="Screenshot of formagroup.it" loading="lazy"><span class="sr-only">Visit website</span></a>
+      <div><h3>Formagroup</h3><p>Company website · services and consulting</p><p>Company website presenting the group's services, expertise, and activities.</p><p class="stack">WordPress, Elementor · <a href="https://formagroup.it" target="_blank" rel="noopener">formagroup.it</a></p></div>
+    </article>
+    <article class="project">
+      <a class="shot" href="https://www.italianglobalservice.com/" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://www.italianglobalservice.com/" alt="Screenshot of www.italianglobalservice.com" loading="lazy"><span class="sr-only">Visit website</span></a>
+      <div><h3>Italian Global Service</h3><p>Company website · international services</p><p>Company website for services and support for international clients and businesses.</p><p class="stack">WordPress, Elementor · <a href="https://www.italianglobalservice.com/" target="_blank" rel="noopener">italianglobalservice.com</a></p></div>
+    </article>
+    <article class="project">
+      <a class="shot" href="https://studiolegalenovellini.it" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://studiolegalenovellini.it" alt="Screenshot of studiolegalenovellini.it" loading="lazy"><span class="sr-only">Visit website</span></a>
+      <div><h3>Studio Legale Novellini</h3><p>Professional website · law firm</p><p>Professional website presenting the firm, practice areas, and contact details.</p><p class="stack">WordPress, Elementor · <a href="https://studiolegalenovellini.it" target="_blank" rel="noopener">studiolegalenovellini.it</a></p></div>
+    </article>
+</div>
+  </section>
 
   <section id="servizi">
     <h2>What I can fix for you</h2>
@@ -326,63 +365,7 @@ section{position:relative}section>h2{display:flex;align-items:center;gap:12px}se
     <p class="note" style="margin:8px 0 0">Names and data in the examples are made up. Tell me about a job your team does by hand every week, and I'll tell you whether and how it can be automated.</p>
   </section>
 
-  <section id="lavori">
-    <h2>Work</h2>
-    <p class="note">Some sites I've built that are online. Most are in Arabic, for clients in Libya.</p>
-    <div id="projects"><div class="project">
-  <a class="shot" href="https://al-amal.ly/" target="_blank" rel="noopener"><img src="../assets/shots/al-amal-640.webp" srcset="../assets/shots/al-amal-640.webp 640w, ../assets/shots/al-amal.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Al-Amal Foundation"></a>
-  <div><h3><a href="https://al-amal.ly/" target="_blank" rel="noopener">Al-Amal Foundation</a></h3>
-  <p class="meta"><span class="wp">WordPress</span> site · volunteer foundation, Benghazi</p>
-  <p>The foundation's website: who they are, their campaigns, partners, and forms to volunteer or donate. All in Arabic.</p>
-  <p class="stack">WordPress, Elementor, Neve theme · <a href="https://al-amal.ly/" target="_blank" rel="noopener">al-amal.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://najm-ashamal.ly/" target="_blank" rel="noopener"><img src="../assets/shots/najm-ashamal-640.webp" srcset="../assets/shots/najm-ashamal-640.webp 640w, ../assets/shots/najm-ashamal.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Najm Al-Shamal"></a>
-  <div><h3><a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">Najm Al-Shamal</a></h3>
-  <p class="meta"><span class="wp">WordPress</span> site · engineering and training company</p>
-  <p>Company website with services, courses and news, plus a page where you can check that a certificate is valid.</p>
-  <p class="stack">WordPress, Elementor, Neve theme · <a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">najm-ashamal.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://i-volunteer.ly/" target="_blank" rel="noopener"><img src="../assets/shots/i-volunteer-640.webp" srcset="../assets/shots/i-volunteer-640.webp 640w, ../assets/shots/i-volunteer.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of I Volunteer"></a>
-  <div><h3><a href="https://i-volunteer.ly/" target="_blank" rel="noopener">I Volunteer</a></h3>
-  <p class="meta">Web platform and app</p>
-  <p>A platform for finding volunteer work in Libya. People search by city, apply, follow their applications from their profile and get a certificate at the end. There's also a phone app.</p>
-  <p class="stack">PHP, CodeIgniter 4, MySQL, Flutter · <a href="https://i-volunteer.ly/" target="_blank" rel="noopener">i-volunteer.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://orgs.ly/" target="_blank" rel="noopener"><img src="../assets/shots/orgs-640.webp" srcset="../assets/shots/orgs-640.webp 640w, ../assets/shots/orgs.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Orgs.ly"></a>
-  <div><h3><a href="https://orgs.ly/" target="_blank" rel="noopener">Orgs.ly</a></h3>
-  <p class="meta">Portal for organisations</p>
-  <p>A portal where several organisations share one database, with access based on each person's role, reports and a member list.</p>
-  <p class="stack">PHP, MySQL, JavaScript · <a href="https://orgs.ly/" target="_blank" rel="noopener">orgs.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://atharcso.org/" target="_blank" rel="noopener"><img src="../assets/shots/athar-640.webp" srcset="../assets/shots/athar-640.webp 640w, ../assets/shots/athar.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Athar"></a>
-  <div><h3><a href="https://atharcso.org/" target="_blank" rel="noopener">Athar</a></h3>
-  <p class="meta">Management system for organisations</p>
-  <p>An Arabic management system where organisations record their projects, members, documents and accounts, and print reports.</p>
-  <p class="stack">PHP 8, CodeIgniter 4, MySQL · <a href="https://atharcso.org/" target="_blank" rel="noopener">atharcso.org</a></p></div></div><div class="project">
-  <a class="shot" href="https://tafarrod.ly/" target="_blank" rel="noopener"><img src="../assets/shots/tafarrod-640.webp" srcset="../assets/shots/tafarrod-640.webp 640w, ../assets/shots/tafarrod.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Tafarrod"></a>
-  <div><h3><a href="https://tafarrod.ly/" target="_blank" rel="noopener">Tafarrod</a></h3>
-  <p class="meta">Website with an admin panel</p>
-  <p>An Arabic and English website for an organisation in Benghazi. Projects, events and news are updated from an admin panel I wrote.</p>
-  <p class="stack">PHP, MySQL · <a href="https://tafarrod.ly/" target="_blank" rel="noopener">tafarrod.ly</a></p></div></div>
-
-    <article class="project">
-      <a class="shot" href="https://milanobusinesscenter.it" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://milanobusinesscenter.it" alt="Screenshot of milanobusinesscenter.it" loading="lazy"><span class="sr-only">Visit website</span></a>
-      <div><h3>Milano Business Center</h3><p>Company website · business services in Milan</p><p>Website for a center dedicated to services and support for businesses and professionals.</p><p class="stack">WordPress, Elementor · <a href="https://milanobusinesscenter.it" target="_blank" rel="noopener">milanobusinesscenter.it</a></p></div>
-    </article>
-    <article class="project">
-      <a class="shot" href="https://milanobusinesstravel.it" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://milanobusinesstravel.it" alt="Screenshot of milanobusinesstravel.it" loading="lazy"><span class="sr-only">Visit website</span></a>
-      <div><h3>Milano Business Travel</h3><p>Company website · business travel</p><p>Website for travel services and assistance dedicated to professionals and businesses.</p><p class="stack">WordPress, Elementor · <a href="https://milanobusinesstravel.it" target="_blank" rel="noopener">milanobusinesstravel.it</a></p></div>
-    </article>
-    <article class="project">
-      <a class="shot" href="https://formagroup.it" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://formagroup.it" alt="Screenshot of formagroup.it" loading="lazy"><span class="sr-only">Visit website</span></a>
-      <div><h3>Formagroup</h3><p>Company website · services and consulting</p><p>Company website presenting the group's services, expertise, and activities.</p><p class="stack">WordPress, Elementor · <a href="https://formagroup.it" target="_blank" rel="noopener">formagroup.it</a></p></div>
-    </article>
-    <article class="project">
-      <a class="shot" href="https://www.italianglobalservice.com/" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://www.italianglobalservice.com/" alt="Screenshot of www.italianglobalservice.com" loading="lazy"><span class="sr-only">Visit website</span></a>
-      <div><h3>Italian Global Service</h3><p>Company website · international services</p><p>Company website for services and support for international clients and businesses.</p><p class="stack">WordPress, Elementor · <a href="https://www.italianglobalservice.com/" target="_blank" rel="noopener">italianglobalservice.com</a></p></div>
-    </article>
-    <article class="project">
-      <a class="shot" href="https://studiolegalenovellini.it" target="_blank" rel="noopener"><img src="https://image.thum.io/get/width/1200/crop/800/https://studiolegalenovellini.it" alt="Screenshot of studiolegalenovellini.it" loading="lazy"><span class="sr-only">Visit website</span></a>
-      <div><h3>Studio Legale Novellini</h3><p>Professional website · law firm</p><p>Professional website presenting the firm, practice areas, and contact details.</p><p class="stack">WordPress, Elementor · <a href="https://studiolegalenovellini.it" target="_blank" rel="noopener">studiolegalenovellini.it</a></p></div>
-    </article>
-</div>
-  </section>
+  
 
   <section id="competenze">
     <h2>Skills</h2>
