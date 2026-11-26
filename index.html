@@ -281,6 +281,18 @@ html{scroll-padding-top:24px}
 .awam-icon{flex:none;vertical-align:middle}
 .hero-actions a,.solution-grid strong,.prob .q{display:flex;align-items:center;gap:8px}
 .solution-grid .awam-icon,.prob .awam-icon{color:var(--purple)}
+
+/* Full-width hero with centered content */
+.hero-band{
+  background:radial-gradient(ellipse at 85% 20%,#53204e 0%,transparent 57%),#201323;
+}
+.hero-band .intro{
+  margin:0 auto;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  padding:clamp(30px,6vw,76px) 0;
+}
 </style>
 </head>
 <body>
@@ -299,8 +311,9 @@ html{scroll-padding-top:24px}
   </div>
 </header>
 
-<main class="wrap">
-  <div class="intro">
+<main class="site-main">
+  <div class="hero-band">
+    <div class="intro wrap">
     <div>
       <p class="hero-kicker">Web development · Milan &amp; remote</p>
       <h1>Awam Zeyad</h1>
@@ -316,6 +329,8 @@ html{scroll-padding-top:24px}
     </div>
     <figure class="hero-portrait"><picture><source srcset="/assets/awam-256.webp" type="image/webp"><img src="/assets/awam-256.jpg" width="256" height="256" alt="Photo of Awam Zeyad"></picture><figcaption>Awam Zeyad · Web developer since 2017</figcaption></figure>
   </div>
+  </div>
+  <div class="wrap">
 
   <section id="solutions" aria-labelledby="solutions-heading">
     <h2 id="solutions-heading">Systems for your business</h2>
@@ -498,6 +513,7 @@ html{scroll-padding-top:24px}
     </div>
     <a class="contact-email" href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a>
   </section>
+  </div>
 </main>
 
 <footer><div class="wrap"><img src="/assets/brand/logo-white-340.webp" width="340" height="95" alt="Awam Develops" loading="lazy"><span>Awam Zeyad · Milano · <a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a></span></div></footer>
