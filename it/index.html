@@ -265,6 +265,20 @@ h1, h2, h3, h4, h5, h6 { font-family: Manrope, system-ui, sans-serif; font-weigh
   #projects { grid-template-columns: minmax(0,1fr); gap: 18px; }
   #projects > .project > div { padding: 16px 18px 20px; }
 }
+
+/* Skills uses the same purple tones as Experience */
+#competenze.skills-purple {
+  background: linear-gradient(115deg,#5e1857,#77206e);
+  color: #fff;
+  border: 0;
+  border-radius: 16px;
+  margin-block: 24px;
+  padding: clamp(24px,5vw,52px);
+}
+#competenze.skills-purple h2,
+#competenze.skills-purple h3 { color: #fff; }
+#competenze.skills-purple p { color: #faebf8; }
+#competenze.skills-purple .skr { border-color: #ffffff47; }
 </style>
 </head>
 <body>
@@ -429,7 +443,7 @@ h1, h2, h3, h4, h5, h6 { font-family: Manrope, system-ui, sans-serif; font-weigh
 
   
 
-  <section id="competenze">
+  <section id="competenze" class="skills-purple">
     <h2>Competenze</h2>
     <p class="note">Gli strumenti che uso e a cosa mi servono.</p>
     <div class="sk">
