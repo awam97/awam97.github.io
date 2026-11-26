@@ -230,13 +230,26 @@ section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-
  #projects,.contact{grid-template-columns:minmax(0,1fr)}
  .contact-email{justify-self:start}
 }
+
+/* English profile */
+html{scroll-padding-top:24px}
+.intro{grid-template-columns:minmax(0,1fr) 190px;background:#fff;border-top:4px solid var(--purple);border-radius:16px}
+.intro .profile-role{font-size:1.25rem;color:var(--purple-dark);font-weight:600;margin-bottom:12px}
+.hero-portrait{padding:9px;background:var(--bg-2);color:var(--purple-dark);border:1px solid var(--line)}
+.hero-portrait figcaption{font-size:.76rem}
+#about p{max-width:65ch;color:var(--muted)}
+#lavori{border-top:1px solid var(--line)}
+#esperienza .jobs li{border-bottom:1px solid var(--line);padding-block:16px}
+#esperienza .jobs li:last-child{border-bottom:0}
+@media(max-width:640px){.intro{grid-template-columns:minmax(0,1fr)}.hero-portrait{max-width:155px}}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap bar">
     <a class="logo" href="#"><picture><img src="../assets/brand/logo-color-340.webp" width="340" height="74" alt="Awam Develops"></picture></a>
-    <nav>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
       <a href="#servizi">Services</a>
       <a href="#automazioni">Automation</a>
       <a href="#lavori">Work</a>
@@ -250,8 +263,9 @@ section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-
   <div class="intro">
     <div>
       <p class="hero-kicker">Web development · Milan &amp; remote</p>
-      <h1>Websites and tools for your business</h1>
-      <p>I’m Awam Zeyad. I build WordPress and WooCommerce sites, custom PHP applications, and automations for businesses and agencies. I can also look after your site after launch.</p>
+      <h1>Awam Zeyad</h1>
+      <p class="profile-role">Web Developer</p>
+      <p>I build WordPress and WooCommerce sites, custom PHP applications, and automations for businesses and agencies. I can also look after your site after launch.</p>
       <div class="hero-actions"><a href="#contatti">Work with me</a><a class="secondary" href="#lavori">View my work</a></div>
       <div class="links">
         <a href="mailto:awam.develops@gmail.com">awam.develops@gmail.com</a>
@@ -262,6 +276,38 @@ section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-
     </div>
     <figure class="hero-portrait"><picture><source srcset="../assets/awam-256.webp" type="image/webp"><img src="../assets/awam-256.jpg" width="256" height="256" alt="Photo of Awam Zeyad"></picture><figcaption>Awam Zeyad · Web developer since 2017</figcaption></figure>
   </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I've been developing websites since 2017, first in Libya and now from Milan. I work remotely with businesses and agencies on new builds, ongoing maintenance and improvements to existing sites.</p>
+  </section>
+
+  <section id="servizi">
+    <h2>Services</h2>
+    <p class="note">Development and support for websites, online stores and internal tools.</p>
+    <div class="probs">
+      <div class="prob"><h3 class="q">Website speed</h3><p>I compress images, sort out caching and heavy plugins, and change hosting if needed. I measure with PageSpeed before and after, so you can see the difference.</p></div>
+      <div class="prob"><h3 class="q">Monthly maintenance</h3><p>Monthly maintenance: backups, updates tested on a copy first, security checks and bug fixes.</p></div>
+      <div class="prob"><h3 class="q">Figma to WordPress</h3><p>I build it in WordPress, with Elementor or a custom theme, true to the design and easy for the client to edit.</p></div>
+      <div class="prob"><h3 class="q">WooCommerce stores</h3><p>A WooCommerce shop with products, payments, shipping and order emails, plus small plugins when something specific is needed.</p></div>
+      <div class="prob"><h3 class="q">Lead capture and automation</h3><p>I connect the site's form to the CRM, Google Sheets and email with Make: every enquiry is saved, you get an alert and the client gets a reply straight away.</p></div>
+      <div class="prob"><h3 class="q">Custom business applications</h3><p>I build a custom system in PHP and CodeIgniter: logins with users and roles, records, PDF reports, and a connected app if needed.</p></div>
+      <div class="prob"><h3 class="q">Technical SEO</h3><p>I fix the technical SEO: titles, structure, sitemap, speed, Search Console and Analytics, so you know where visits come from.</p></div>
+      <div class="prob"><h3 class="q">Development support for agencies</h3><p>I join your workflow remotely, per project or for a few days a month, using your tools and your rules.</p></div>
+    </div>
+  </section>
+
+  <section id="esperienza">
+    <h2>Experience</h2>
+    <ul class="jobs">
+      <li><span class="y">2017 – now</span><div><b>Freelance web developer</b><span class="d">Websites and platforms for companies and organisations, mostly in Libya</span></div></li>
+      <li><span class="y">2025 – 2026</span><div><b>IT Manager &amp; Marketing · Formagroup, Milano</b><span class="d">Company websites, an internal CRM, Google Ads campaigns and IT support</span></div></li>
+      <li><span class="y">2023 – 2024</span><div><b>IT tutor and helpdesk · City of Modena</b><span class="d">Italian civil service: computer courses for residents</span></div></li>
+      <li><span class="y">2021 – 2022</span><div><b>Technical support · Altair Handling, Libya</b><span class="d">Built a boarding pass printing system with a partner airline</span></div></li>
+      <li><span class="y">2019 – 2020</span><div><b>Desktop developer · Libyan Ministry of Education</b><span class="d">Management system for the national multiple-choice exams</span></div></li>
+    </ul>
+    <p class="note" style="margin:18px 0 0">I'm studying Computer Engineering at the University of Modena and Reggio Emilia.</p>
+  </section>
 
   <section id="lavori">
     <h2>Selected projects</h2>
@@ -321,19 +367,21 @@ section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-
 </div>
   </section>
 
-  <section id="servizi">
-    <h2>What I can fix for you</h2>
-    <p class="note">The problems people bring me most often, and how I solve them.</p>
-    <div class="probs">
-      <div class="prob"><h3 class="q">Website speed</h3><p>I compress images, sort out caching and heavy plugins, and change hosting if needed. I measure with PageSpeed before and after, so you can see the difference.</p></div>
-      <div class="prob"><h3 class="q">Monthly maintenance</h3><p>Monthly maintenance: backups, updates tested on a copy first, security checks and bug fixes.</p></div>
-      <div class="prob"><h3 class="q">Figma to WordPress</h3><p>I build it in WordPress, with Elementor or a custom theme, true to the design and easy for the client to edit.</p></div>
-      <div class="prob"><h3 class="q">WooCommerce stores</h3><p>A WooCommerce shop with products, payments, shipping and order emails, plus small plugins when something specific is needed.</p></div>
-      <div class="prob"><h3 class="q">Lead capture and automation</h3><p>I connect the site's form to the CRM, Google Sheets and email with Make: every enquiry is saved, you get an alert and the client gets a reply straight away.</p></div>
-      <div class="prob"><h3 class="q">Custom business applications</h3><p>I build a custom system in PHP and CodeIgniter: logins with users and roles, records, PDF reports, and a connected app if needed.</p></div>
-      <div class="prob"><h3 class="q">Technical SEO</h3><p>I fix the technical SEO: titles, structure, sitemap, speed, Search Console and Analytics, so you know where visits come from.</p></div>
-      <div class="prob"><h3 class="q">Development support for agencies</h3><p>I join your workflow remotely, per project or for a few days a month, using your tools and your rules.</p></div>
+  <section id="competenze">
+    <h2>Skills</h2>
+    <p class="note">The tools I use and what I use them for.</p>
+    <div class="sk">
+      <div class="skr"><h3>WordPress</h3><p class="tools">WordPress, Elementor, WooCommerce, child theme, plugin</p><p>Company sites, landing pages and online shops that clients can update themselves.</p></div>
+      <div class="skr"><h3>PHP and databases</h3><p class="tools">PHP 8, CodeIgniter 4, MySQL, REST API, AJAX</p><p>Back-office systems, portals with logins and roles, APIs for mobile apps, PDF reports.</p></div>
+      <div class="skr"><h3>Frontend</h3><p class="tools">HTML, CSS, JavaScript, Bootstrap</p><p>Responsive, multilingual pages, including right-to-left for Arabic.</p></div>
+      <div class="skr"><h3>Automation and integrations</h3><p class="tools">Make, webhook, Gmail, Google Sheets, CRM (Squadd)</p><p>Connecting site, email, sheets and CRM so data moves on its own.</p></div>
+      <div class="skr"><h3>SEO and marketing</h3><p class="tools">Google Search Console, Google Analytics, Google Ads</p><p>Seeing where visits come from, fixing technical SEO, running campaigns.</p></div>
+      <div class="skr"><h3>Servers and going live</h3><p class="tools">cPanel, hosting, domini, caselle email, Git e GitHub</p><p>Publishing, migrating and keeping sites and email in order.</p></div>
+      <div class="skr"><h3>Design</h3><p class="tools">Figma, Photoshop</p><p>Reading a design, making mockups and web graphics.</p></div>
+      <div class="skr"><h3>Apps and other</h3><p class="tools">Flutter, Python, ASP.NET</p><p>Mobile apps connected to the platforms, scripts and older systems.</p></div>
+      <div class="skr"><h3>Building with AI</h3><p class="tools">Claude Code, Codex, Antigravity</p><p>They make me faster. I review and test the code myself before I hand it over.</p></div>
     </div>
+    <p style="margin:22px 0 0"><b>Languages:</b> <span>Arabic (native), Italian (B2), English (B2)</span></p>
   </section>
 
   <section id="automazioni">
@@ -390,37 +438,6 @@ section>h2{font-size:clamp(1.65rem,3vw,2.35rem);line-height:1.2;letter-spacing:-
       </div>
     </div>
     <p class="note" style="margin:8px 0 0">Names and data in the examples are made up. Tell me about a job your team does by hand every week, and I'll tell you whether and how it can be automated.</p>
-  </section>
-
-  
-
-  <section id="competenze">
-    <h2>Skills</h2>
-    <p class="note">The tools I use and what I use them for.</p>
-    <div class="sk">
-      <div class="skr"><h3>WordPress</h3><p class="tools">WordPress, Elementor, WooCommerce, child theme, plugin</p><p>Company sites, landing pages and online shops that clients can update themselves.</p></div>
-      <div class="skr"><h3>PHP and databases</h3><p class="tools">PHP 8, CodeIgniter 4, MySQL, REST API, AJAX</p><p>Back-office systems, portals with logins and roles, APIs for mobile apps, PDF reports.</p></div>
-      <div class="skr"><h3>Frontend</h3><p class="tools">HTML, CSS, JavaScript, Bootstrap</p><p>Responsive, multilingual pages, including right-to-left for Arabic.</p></div>
-      <div class="skr"><h3>Automation and integrations</h3><p class="tools">Make, webhook, Gmail, Google Sheets, CRM (Squadd)</p><p>Connecting site, email, sheets and CRM so data moves on its own.</p></div>
-      <div class="skr"><h3>SEO and marketing</h3><p class="tools">Google Search Console, Google Analytics, Google Ads</p><p>Seeing where visits come from, fixing technical SEO, running campaigns.</p></div>
-      <div class="skr"><h3>Servers and going live</h3><p class="tools">cPanel, hosting, domini, caselle email, Git e GitHub</p><p>Publishing, migrating and keeping sites and email in order.</p></div>
-      <div class="skr"><h3>Design</h3><p class="tools">Figma, Photoshop</p><p>Reading a design, making mockups and web graphics.</p></div>
-      <div class="skr"><h3>Apps and other</h3><p class="tools">Flutter, Python, ASP.NET</p><p>Mobile apps connected to the platforms, scripts and older systems.</p></div>
-      <div class="skr"><h3>Building with AI</h3><p class="tools">Claude Code, Codex, Antigravity</p><p>They make me faster. I review and test the code myself before I hand it over.</p></div>
-    </div>
-    <p style="margin:22px 0 0"><b>Languages:</b> <span>Arabic (native), Italian (B2), English (B2)</span></p>
-  </section>
-
-  <section id="esperienza">
-    <h2>Experience</h2>
-    <ul class="jobs">
-      <li><span class="y">2017 – now</span><div><b>Freelance web developer</b><span class="d">Websites and platforms for companies and organisations, mostly in Libya</span></div></li>
-      <li><span class="y">2025 – 2026</span><div><b>IT Manager &amp; Marketing · Formagroup, Milano</b><span class="d">Company websites, an internal CRM, Google Ads campaigns and IT support</span></div></li>
-      <li><span class="y">2023 – 2024</span><div><b>IT tutor and helpdesk · City of Modena</b><span class="d">Italian civil service: computer courses for residents</span></div></li>
-      <li><span class="y">2021 – 2022</span><div><b>Technical support · Altair Handling, Libya</b><span class="d">Built a boarding pass printing system with a partner airline</span></div></li>
-      <li><span class="y">2019 – 2020</span><div><b>Desktop developer · Libyan Ministry of Education</b><span class="d">Management system for the national multiple-choice exams</span></div></li>
-    </ul>
-    <p class="note" style="margin:18px 0 0">I'm studying Computer Engineering at the University of Modena and Reggio Emilia.</p>
   </section>
 
   <section id="contatti" class="contact">
