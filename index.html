@@ -362,6 +362,50 @@ body { font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 
 h1, h2, h3, h4, h5, h6 { font-family: Manrope, system-ui, sans-serif; font-weight: 700; }
 .intro h1 { font-weight: 800; }
 .bar nav a, .hero-actions a, .contact-email, button { font-family: Inter, system-ui, sans-serif; font-weight: 600; }
+
+/* Project gallery */
+#projects { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+#projects > .project:nth-child(n) {
+  grid-column: auto;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+}
+#projects > .project .shot:nth-child(1) {
+  width: auto;
+  margin: 12px 12px 0;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  aspect-ratio: 16/10;
+  background: var(--bg-2);
+}
+#projects > .project > div { padding: 20px 24px 24px; }
+#projects > .project h3 { font-size: 1.25rem; }
+#projects .project .stack a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: var(--bg-2);
+}
+#projects .project .stack a::after { content: " ↗"; }
+#projects > .project:focus-within,
+#projects > .project:hover { border-color: #af7ba9; }
+@media (min-width: 821px) {
+  #projects > .project:first-child {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0,1.5fr) minmax(0,1fr);
+    align-items: center;
+    background: var(--bg-2);
+  }
+  #projects > .project:first-child .shot { margin: 12px; }
+  #projects > .project:first-child h3 { font-size: 1.85rem; }
+}
+@media (max-width: 640px) {
+  #projects { grid-template-columns: minmax(0,1fr); gap: 18px; }
+  #projects > .project > div { padding: 16px 18px 20px; }
+}
 </style>
 </head>
 <body>
@@ -460,32 +504,32 @@ h1, h2, h3, h4, h5, h6 { font-family: Manrope, system-ui, sans-serif; font-weigh
     <h2>Selected projects</h2>
     <p class="note">Client websites and custom platforms built for businesses and organisations in Italy and Libya.</p>
     <div id="projects"><div class="project">
-  <a class="shot" href="https://al-amal.ly/" target="_blank" rel="noopener"><img src="/assets/shots/al-amal-640.webp" srcset="/assets/shots/al-amal-640.webp 640w, /assets/shots/al-amal.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Al-Amal Foundation"></a>
+  <a class="shot" href="https://al-amal.ly/" target="_blank" rel="noopener"><img src="/assets/shots/al-amal-640.webp" srcset="/assets/shots/al-amal-640.webp 640w, /assets/shots/al-amal.jpg 1280w" sizes="(min-width: 821px) 620px, (max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Al-Amal Foundation"></a>
   <div><h3><a href="https://al-amal.ly/" target="_blank" rel="noopener">Al-Amal Foundation</a></h3>
   <p class="meta"><span class="wp">WordPress</span> site · volunteer foundation, Benghazi</p>
   <p>The foundation's website: who they are, their campaigns, partners, and forms to volunteer or donate. All in Arabic.</p>
   <p class="stack">WordPress, Elementor, Neve theme · <a href="https://al-amal.ly/" target="_blank" rel="noopener">al-amal.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://najm-ashamal.ly/" target="_blank" rel="noopener"><img src="/assets/shots/najm-ashamal-640.webp" srcset="/assets/shots/najm-ashamal-640.webp 640w, /assets/shots/najm-ashamal.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Najm Al-Shamal"></a>
+  <a class="shot" href="https://najm-ashamal.ly/" target="_blank" rel="noopener"><img src="/assets/shots/najm-ashamal-640.webp" srcset="/assets/shots/najm-ashamal-640.webp 640w, /assets/shots/najm-ashamal.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Najm Al-Shamal"></a>
   <div><h3><a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">Najm Al-Shamal</a></h3>
   <p class="meta"><span class="wp">WordPress</span> site · engineering and training company</p>
   <p>Company website with services, courses and news, plus a page where you can check that a certificate is valid.</p>
   <p class="stack">WordPress, Elementor, Neve theme · <a href="https://najm-ashamal.ly/" target="_blank" rel="noopener">najm-ashamal.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://i-volunteer.ly/" target="_blank" rel="noopener"><img src="/assets/shots/i-volunteer-640.webp" srcset="/assets/shots/i-volunteer-640.webp 640w, /assets/shots/i-volunteer.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of I Volunteer"></a>
+  <a class="shot" href="https://i-volunteer.ly/" target="_blank" rel="noopener"><img src="/assets/shots/i-volunteer-640.webp" srcset="/assets/shots/i-volunteer-640.webp 640w, /assets/shots/i-volunteer.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of I Volunteer"></a>
   <div><h3><a href="https://i-volunteer.ly/" target="_blank" rel="noopener">I Volunteer</a></h3>
   <p class="meta">Web platform and app</p>
   <p>A platform for finding volunteer work in Libya. People search by city, apply, follow their applications from their profile and get a certificate at the end. There's also a phone app.</p>
   <p class="stack">PHP, CodeIgniter 4, MySQL, Flutter · <a href="https://i-volunteer.ly/" target="_blank" rel="noopener">i-volunteer.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://orgs.ly/" target="_blank" rel="noopener"><img src="/assets/shots/orgs-640.webp" srcset="/assets/shots/orgs-640.webp 640w, /assets/shots/orgs.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Orgs.ly"></a>
+  <a class="shot" href="https://orgs.ly/" target="_blank" rel="noopener"><img src="/assets/shots/orgs-640.webp" srcset="/assets/shots/orgs-640.webp 640w, /assets/shots/orgs.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Orgs.ly"></a>
   <div><h3><a href="https://orgs.ly/" target="_blank" rel="noopener">Orgs.ly</a></h3>
   <p class="meta">Portal for organisations</p>
   <p>A portal where several organisations share one database, with access based on each person's role, reports and a member list.</p>
   <p class="stack">PHP, MySQL, JavaScript · <a href="https://orgs.ly/" target="_blank" rel="noopener">orgs.ly</a></p></div></div><div class="project">
-  <a class="shot" href="https://atharcso.org/" target="_blank" rel="noopener"><img src="/assets/shots/athar-640.webp" srcset="/assets/shots/athar-640.webp 640w, /assets/shots/athar.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Athar"></a>
+  <a class="shot" href="https://atharcso.org/" target="_blank" rel="noopener"><img src="/assets/shots/athar-640.webp" srcset="/assets/shots/athar-640.webp 640w, /assets/shots/athar.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Athar"></a>
   <div><h3><a href="https://atharcso.org/" target="_blank" rel="noopener">Athar</a></h3>
   <p class="meta">Management system for organisations</p>
   <p>An Arabic management system where organisations record their projects, members, documents and accounts, and print reports.</p>
   <p class="stack">PHP 8, CodeIgniter 4, MySQL · <a href="https://atharcso.org/" target="_blank" rel="noopener">atharcso.org</a></p></div></div><div class="project">
-  <a class="shot" href="https://tafarrod.ly/" target="_blank" rel="noopener"><img src="/assets/shots/tafarrod-640.webp" srcset="/assets/shots/tafarrod-640.webp 640w, /assets/shots/tafarrod.jpg 1280w" sizes="(max-width:680px) 100vw, 300px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Tafarrod"></a>
+  <a class="shot" href="https://tafarrod.ly/" target="_blank" rel="noopener"><img src="/assets/shots/tafarrod-640.webp" srcset="/assets/shots/tafarrod-640.webp 640w, /assets/shots/tafarrod.jpg 1280w" sizes="(max-width: 640px) calc(100vw - 58px), 500px" width="640" height="400" loading="lazy" decoding="async" alt="Screenshot of Tafarrod"></a>
   <div><h3><a href="https://tafarrod.ly/" target="_blank" rel="noopener">Tafarrod</a></h3>
   <p class="meta">Website with an admin panel</p>
   <p>An Arabic and English website for an organisation in Benghazi. Projects, events and news are updated from an admin panel I wrote.</p>
